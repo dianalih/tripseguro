@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+   <!-- Title -->
+   <title>Lista de Hoteles | TripSeguro</title>
+   <!-- Required Meta Tags Always Come First -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="favicon.png">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+   <link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+   <!-- CSS Implementing Plugins -->
+   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+   <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+   <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+   <link rel="stylesheet" href="documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+   <link rel="stylesheet" href="documentation/assets/vendor/prism/prism.css">
+   <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+   <link rel="stylesheet" href="assets/vendor/flatpickr/dist/flatpickr.min.css">
+   <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+   <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+   <link rel="stylesheet" href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+   <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+   <!-- CSS  Template -->
+   <link rel="stylesheet" href="assets/css/theme.css">
+   <!-- Font Awesome -->
+
+
+   <script src="https://kit.fontawesome.com/87cd9ac244.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- ========== HEADER ========== -->
+   <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-white u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="500" data-header-fix-effect="slide">
+      <div class="u-header_section u-header_shadow-on-show-hide py-0">
+         <!-- Topbar -->
+         <div class="bg-violet u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="position-relative u-header_hide-content">
+                        <ul class="list-inline u-header_topbar-nav-divider mb-0">
+                            <li class="list-inline-item mr-0"><a href="tel:(000)000000000" class="u-header_navbar-link">(000) 000 - 000 - 000</a></li>
+                            <li class="list-inline-item mr-0"><a href="mailto:info@tripseguro.com" class="u-header_navbar-link">info@tripseguro.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="ml-auto d-flex align-items-center">
+                        <ul class="list-inline mb-0 mr-2 pr-1">
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
+                                    <span class="fab fa-facebook-f btn-icon_inner"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://twitter.com/" target="_blank">
+                                    <span class="fab fa-twitter btn-icon_inner"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.instagram.com/" target="_blank">
+                                    <span class="fab fa-instagram btn-icon_inner"></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.linkedin.com/" target="_blank">
+                                    <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-sm-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                            <a class="d-flex align-items-center text-white py-3" href=""><i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
+                                <span class="d-inline-block font-size-14 mr-1">Login</span>
+                            </a>
+                        </div>
+
+                        <div class="d-sm-block d-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                            <a id="signUpDropdownInvoker"  href="javascript:;" class="d-flex align-items-center text-white py-3" aria-controls="signUpDropdown" aria-haspopup="true" aria-expanded="true" data-unfold-event="click" data-unfold-target="#signUpDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                <i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
+                                <span class="d-inline-block font-size-14 mr-1">Login</span>
+                            </a>
+                            <div id="signUpDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right py-0 mt-0" aria-labelledby="signUpDropdownInvoker" style="min-width: 500px;">
+                               <!-- PONE AQUI TODO LOS FORMS DEL DROPDOWN DE LOGIN-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Topbar -->
+         <div id="logoAndNav" class="container py-xl-3">
+            <!-- Nav -->
+            <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
+               <!-- Logo -->
+               <a class="navbar-brand u-header_navbar-brand-default u-header_navbar-brand-center u-header_navbar-brand-text-white" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Logo -->
+               <!-- Handheld Logo -->
+               <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-collapsed" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Handheld Logo -->
+               <!-- Scroll Logo -->
+               <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-on-scroll" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Scroll Logo -->
+               <!-- Responsive Toggle Button -->
+               <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                  <span id="hamburgerTrigger" class="u-hamburger_box">
+                     <span class="u-hamburger_inner"></span>
+                  </span>
+               </button>
+               <!-- End Responsive Toggle Button -->
+               <!-- Navigation -->
+               <div id="navBar" class="navbar-collapse u-header_navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
+                  <ul class="navbar-nav u-header_navbar-nav">
+                     <!-- Home -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="homeMenu" class="nav-link u-header_nav-link  u-header_nav-link-border" href="#">Home</a>
+                     </li>
+                     <!-- End Home -->
+                     <!-- Hoteles -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Hoteles</a>
+                     </li>
+                     <!-- End Hoteles -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Autos</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Seguros</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Tours</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre
+                           Nosotros</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Contáctanos</a>
+                     </li>
+                     <!-- End Autos  -->
+                  </ul>
+               </div>
+               <!-- End Navigation -->
+               <!-- Shopping Cart -->
+               <div class="pl-2 pl-md-4 ml-auto shopping-cart">
+                  <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                     <span class="font-size-25 text-primary-max-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  </a>
+                  <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right p-0 mt-0 w-max-sm-100 u-unfold--css-animation font-size-16" aria-labelledby="shoppingCartDropdownInvoker" style="width: 500px; animation-duration: 300ms; right: 0px;">
+                     <div class="card">
+                        <!-- Header -->
+                        <div class="card-header border-color-8 py-3 px-5">
+                           <span class="font-weight-semi-bold">Tu carrito</span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Body -->
+                        <div class="card-body p-0">
+                           <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
+                              <div class="media p-2 p-md-3">
+                                 <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
+                                    <img class="img-fluid rounded-pill" src="assets/img/80x80/img1.jpg" alt="Image Description">
+                                 </div>
+                                 <div class="media-body position-relative pl-md-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
+                                       <span class="d-block text-dark font-weight-bold">Hyatt New York</span>
+                                       <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
+                                          <i class="fas fa-trash"></i>
+                                       </button>
+                                    </div>
+                                    <span class="d-block text-gray-1">$590.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
+                              <div class="media p-2 p-md-3">
+                                 <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
+                                    <img class="img-fluid rounded-pill" src="assets/img/80x80/img2.jpg" alt="Image Description">
+                                 </div>
+                                 <div class="media-body position-relative pl-md-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
+                                       <span class="d-block text-dark font-weight-bold">Seguro basico</span>
+                                       <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
+                                          <i class="fas fa-trash"></i>
+                                       </button>
+                                    </div>
+                                    <span class="d-block text-gray-1">$100.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- End Body -->
+                        <!-- Footer -->
+                        <div class="card-footer border-0 p-3 px-md-5 py-md-4">
+                           <div class="mb-4 pb-md-1">
+                              <span class="d-block font-weight-semi-bold">Subtotal: $690.00</span>
+                           </div>
+                           <div class="d-md-flex button-inline-group-md mb-1">
+                              <a class="btn btn-block btn-md btn-gray-1 rounded-xs font-weight-bold transition-3d-hover" href="#">
+                                 Ver carrito
+                              </a>
+                              <a class="btn btn-block btn-md btn-blue-1 rounded-xs font-weight-bold transition-3d-hover mt-md-0 ml-md-5" href="#">
+                                 Pagar ahora
+                              </a>
+                           </div>
+                        </div>
+                        <!-- End Footer -->
+                     </div>
+                  </div>
+               </div>
+               <!-- End Shopping Cart -->
+            </nav>
+            <!-- End Nav -->
+         </div>
+      </div>
+   </header>
+   <!-- ========== End HEADER ========== -->
+   <!-- ========== MAIN CONTENT ========== -->
+   <main id="content" role="main" class="border-top">
+      <div class="container pt-5 pt-xl-8">
+         <div class="row mb-5 mb-lg-8 mt-xl-1">
+            <div class="col-lg-4 col-xl-3 order-lg-1 width-md-50">
+               <div class="navbar-expand-lg navbar-expand-lg-collapse-block sticky-sidebar">
+                  <button class="btn d-lg-none mb-5 p-0 collapsed" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                     <i class="far fa-caret-square-down text-primary font-size-20 card-btn-arrow ml-0"></i>
+                     <span class="text-primary ml-2">Filtrar</span>
+                  </button>
+                  <div id="sidebar" class="collapse navbar-collapse">
+                     <div class="mb-6 w-100">
+                        <div class="pb-4 mb-2">
+
+
+
+
+
+
+                           <div class="sidenav border border-color-8 rounded-xs">
+                              <div id="DestinoAccordion" class="accordion mb-1">
+                                 <!-- Input -->
+                                 <div class="card-collapse" id="destinoDataHeading">
+                                 <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#destinoData" aria-expanded="false" aria-controls="destinoData">
+                                    <span class="row align-items-center">
+                                       <span class="col-9 font-weight-bold font-size-17 text-dark">
+                                          Destino
+                                       </span>
+                                       <span class="col-3 text-right">
+                                          <span class="card-btn-arrow fas fa-chevron-down small">
+                                          </span>
+                                       </span>
+                                    </span>
+                                 </button>
+                              </div>
+                                 <div id="destinoData" class="collapse show px-5 pb-4" aria-labelledby="destinoDataHeading" data-parent="#DestinoAccordion">
+                                 <div class="mb-4">
+                                    <div class="input-group border-bottom border-width-2 border-color-1">
+                                       <i class="fas fa-map-marker-alt d-flex align-items-center mr-2 text-primary font-size-22"></i>
+                                       <input type="text" class="form-control font-weight-medium font-size-15 shadow-none hero-form border-0 p-0" placeholder="¿Donde quieres ir?" aria-label="Keyword or title" aria-describedby="keywordInputAddon">
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+                                 <!-- Input -->
+                                 <span class="d-block text-gray-1 font-weight-normal mb-0 text-left">Check In -
+                                    Out</span>
+                                 <div class="mb-4">
+                                    <div class="border-bottom border-width-2 border-color-1">
+                                       <div id="datepickerWrapperPick" class="u-datepicker input-group">
+                                          <div class="input-group-prepend">
+                                             <span class="d-flex align-items-center mr-2 font-size-21">
+                                                <i class="fa-solid fa-calendar text-primary"></i>
+                                             </span>
+                                          </div>
+                                          <input class="js-range-datepicker font-weight-medium font-size-15 ml-1 shadow-none form-control hero-form bg-transparent border-0 flatpickr-input p-0" type="text" placeholder="July 7/2019" aria-label="July 7/2019" data-rp-wrapper="#datepickerWrapperPick" data-rp-type="range" data-rp-date-format="M d / Y" data-rp-default-date='["Dic 2 / 2022", "Dic 10 / 2022"]'>
+                                       </div>
+                                       <!-- End Datepicker -->
+                                    </div>
+                                 </div>
+                                 
+                                 <!-- End Input -->
+                                 <!-- Input -->
+                                 <span class="d-block text-gray-1 font-weight-normal mb-0 text-left">Huespedes</span>
+                                 <div class="mb-4 position-relative">
+                                    <div class="border-bottom border-width-2 border-color-1">
+                                       <a class="js-fancybox flex-horizontal-center pt-3 pb-2" href="javascript:;" data-src="#travelers" data-speed="700"  data-ol-has-click-handler="">
+                                          <i class="fa-solid fa-users d-flex align-items-center mr-3 font-size-20 text-primary"></i>
+                                          <span class="text-black font-weight-medium font-size-15 mr-auto">2 Adultos</span>
+                                       </a>	
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+                                 <div class="text-center">
+                                    <button type="submit" class="btn btn-blue-dark-1 height-60 w-100 font-weight-bold mb-xl-0 mb-lg-1 transition-3d-hover"><i class="fa-solid fa-magnifying-glass mr-2 font-size-17"></i>Buscar</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        <div class="sidenav border border-color-8 rounded-xs">
+                           <!-- Accordiaon -->
+
+                           <div id="CancelationAccordion" class="accordion rounded shadow-none border-bottom">
+                              <div class="card-body mt-1 px-5">
+                                 <div class="custom-checkbox px-5 py-0">
+                                    <input type="checkbox" class="custom-control-input" id="Cancelation">
+                                    <label class="font-weight-bold font-size-17 text-dark custom-control-label text-lh-inherit text-color-1" for="Cancelation">
+                                       Cancelación flexible
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div id="RatingAccordion" class="accordion rounded shadow-none border-bottom">
+                              <div class="card-collapse" id="shopRatingHeadingOne">
+                                 <h3 class="mb-0">
+                                    <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#shopRatingOne" aria-expanded="false" aria-controls="shopRatingOne">
+                                       <span class="row align-items-center">
+                                          <span class="col-9 font-weight-bold font-size-17 text-dark">
+                                             Estrellas
+                                          </span>
+                                          <span class="col-3 text-right">
+                                             <span class="card-btn-arrow fas fa-chevron-down small">
+                                             </span>
+                                          </span>
+                                       </span>
+                                    </button>
+                                 </h3>
+                              </div>
+                              <div id="shopRatingOne" class="collapse show" aria-labelledby="shopRatingHeadingOne" data-parent="#RatingAccordion">
+                                 <div class="card-body pt-0 mt-1 px-5">
+                                    <!-- Checkboxes -->
+                                    <div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+                                       <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="stars5">
+                                          <label class="custom-control-label text-lh-inherit text-color-1" for="stars1">
+                                             <div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+                                                <div class="green-lighter ml-1 letter-spacing-2">
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                </div>
+                                             </div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+                                       <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="stars4">
+                                          <label class="custom-control-label text-lh-inherit text-color-1" for="stars2">
+                                             <div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+                                                <div class="green-lighter ml-1 letter-spacing-2">
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                </div>
+                                             </div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+                                       <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="stars3">
+                                          <label class="custom-control-label text-lh-inherit text-color-1" for="stars3">
+                                             <div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+                                                <div class="green-lighter ml-1 letter-spacing-2">
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                </div>
+                                             </div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+                                       <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="stars2">
+                                          <label class="custom-control-label text-lh-inherit text-color-1" for="stars2">
+                                             <div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+                                                <div class="green-lighter ml-1 letter-spacing-2">
+                                                   <i class="fas fa-star"></i>
+                                                   <i class="fas fa-star"></i>
+                                                </div>
+                                             </div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="shopCartAccordion" class="accordion rounded shadow-none">
+                              <div class="border-0">
+                                 <div class="card-collapse" id="shopCardHeadingOne">
+                                    <h3 class="mb-0">
+                                       <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#shopCardOne" aria-expanded="false" aria-controls="shopCardOne">
+                                          <span class="row align-items-center">
+                                             <span class="col-9">
+                                                <span class="d-block font-size-lg-15 font-size-17 font-weight-bold text-dark">Precio</span>
+                                             </span>
+                                             <span class="col-3 text-right">
+                                                <span class="card-btn-arrow">
+                                                   <span class="fas fa-chevron-down small"></span>
+                                                </span>
+                                             </span>
+                                          </span>
+                                       </button>
+                                    </h3>
+                                 </div>
+                                 <div id="shopCardOne" class="collapse show" aria-labelledby="shopCardHeadingOne" data-parent="#shopCartAccordion">
+                                    <div class="card-body pt-0 px-5">
+                                       <div class="pb-3 mb-1 d-flex text-lh-1">
+                                          <span>$</span>
+                                          <span id="rangeSliderExample3MinResult" class=""></span>
+                                          <span class="mx-0dot5"> — </span>
+                                          <span>$</span>
+                                          <span id="rangeSliderExample3MaxResult" class=""></span>
+                                       </div>
+                                       <input class="js-range-slider" type="text" data-extra-classes="u-range-slider height-35" data-type="double" data-grid="false" data-hide-from-to="true" data-min="0" data-max="3456" data-from="200" data-to="3456" data-prefix="$" data-result-min="#rangeSliderExample3MinResult" data-result-max="#rangeSliderExample3MaxResult">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="shopCategoryAccordion" class="accordion rounded-0 shadow-none border-top">
+                              <div class="border-0">
+                                 <div class="card-collapse" id="rating">
+                                    <h3 class="mb-0">
+                                       <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#shopCategoryOne" aria-expanded="false" aria-controls="shopCategoryOne">
+                                          <span class="row align-items-center">
+                                             <span class="col-9">
+                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Valoración</span>
+                                             </span>
+                                             <span class="col-3 text-right">
+                                                <span class="card-btn-arrow">
+                                                   <span class="fas fa-chevron-down small"></span>
+                                                </span>
+                                             </span>
+                                          </span>
+                                       </button>
+                                    </h3>
+                                 </div>
+                                 <div id="shopCategoryOne" class="collapse show" aria-labelledby="rating" data-parent="#shopCategoryAccordion">
+                                    <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                       <!-- Checkboxes -->
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="excelente">
+                                             <label class="custom-control-label" for="excelente">Excelente</label>
+                                          </div>
+                                          <span>749</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="muyBien">
+                                             <label class="custom-control-label" for="muyBien">Muy Bien</label>
+                                          </div>
+                                          <span>630</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="bien">
+                                             <label class="custom-control-label" for="bien">Bien</label>
+                                          </div>
+                                          <span>58</span>
+                                       </div>
+                                       <!-- End Checkboxes -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="boardCategoryAccordion" class="accordion rounded-0 shadow-none border-top">
+                              <div class="border-0">
+                                 <div class="card-collapse" id="facilityCategoryHeadingOne">
+                                    <h3 class="mb-0">
+                                       <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#boardCategoryOne" aria-expanded="false" aria-controls="boardCategoryOne">
+                                          <span class="row align-items-center">
+                                             <span class="col-9">
+                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Régimen</span>
+                                             </span>
+                                             <span class="col-3 text-right">
+                                                <span class="card-btn-arrow">
+                                                   <span class="fas fa-chevron-down small"></span>
+                                                </span>
+                                             </span>
+                                          </span>
+                                       </button>
+                                    </h3>
+                                 </div>
+                                 <div id="boardCategoryOne" class="collapse show" aria-labelledby="boardCategoryHeadingOne" data-parent="#boardCategoryAccordion">
+                                    <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="soloAlojamiento">
+                                             <label class="custom-control-label" for="soloAlojamiento">Solo Alojamiento</label>
+                                          </div>
+                                          <span>749</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="bedBreakfast">
+                                             <label class="custom-control-label" for="bedBreakfast">Desayuno incluido</label>
+                                          </div>
+                                          <span>630</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="mediaPension">
+                                             <label class="custom-control-label" for="mediaPension">Media Pensión</label>
+                                          </div>
+                                          <span>58</span>
+                                       </div>
+                                       <!-- End Checkboxes -->     
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="facilityCategoryAccordion" class="accordion rounded-0 shadow-none border-top">
+                              <div class="border-0">
+                                 <div class="card-collapse" id="facilityCategoryHeadingOne">
+                                    <h3 class="mb-0">
+                                       <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#facilityCategoryOne" aria-expanded="false" aria-controls="facilityCategoryOne">
+                                          <span class="row align-items-center">
+                                             <span class="col-9">
+                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Servicios</span>
+                                             </span>
+                                             <span class="col-3 text-right">
+                                                <span class="card-btn-arrow">
+                                                   <span class="fas fa-chevron-down small"></span>
+                                                </span>
+                                             </span>
+                                          </span>
+                                       </button>
+                                    </h3>
+                                 </div>
+                                 <div id="facilityCategoryOne" class="collapse show" aria-labelledby="facilityCategoryHeadingOne" data-parent="#facilityCategoryAccordion">
+                                    <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="wifi">
+                                             <label class="custom-control-label" for="wifi">WiFi Gratis</label>
+                                          </div>
+                                          <span>749</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="parking">
+                                             <label class="custom-control-label" for="parking">Estacionamiento gratis</label>
+                                          </div>
+                                          <span>630</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="spa">
+                                             <label class="custom-control-label" for="spa">Spa</label>
+                                          </div>
+                                          <span>58</span>
+                                       </div>
+                                       <!-- End Checkboxes -->
+                                       <!-- View More - Collapse -->
+                                       <div class="collapse" id="collapseBrand1">
+                                          <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="gym">
+                                                <label class="custom-control-label" for="gym">Gimnasio</label>
+                                             </div>
+                                             <span>5</span>
+                                          </div>
+                                          <div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="pool">
+                                                <label class="custom-control-label" for="pool">Piscina</label>
+                                             </div>
+                                             <span>1</span>
+                                          </div>
+                                       </div>
+                                       <!-- End View More - Collapse -->
+                                       <!-- Link -->
+                                       <a class="link link-collapse small font-size-1" data-toggle="collapse" href="#collapseBrand1" role="button" aria-expanded="false" aria-controls="collapseBrand1">
+                                          <span class="link-collapse_default font-size-14">Ver Más 13</span>
+                                          <span class="link-collapse_active font-size-14">Ver Menos</span>
+                                       </a>
+                                       <!-- End Link -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="chainCategoryAccordion" class="accordion rounded-0 shadow-none border-top">
+                              <div class="border-0">
+                                 <div class="card-collapse" id="chainCategoryHeadingOne">
+                                    <h3 class="mb-0">
+                                       <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#chainCategoryOne" aria-expanded="false" aria-controls="chainCategoryOne">
+                                          <span class="row align-items-center">
+                                             <span class="col-9">
+                                                <span class="font-weight-bold font-size-17 text-dark mb-3">Cadena hotelera</span>
+                                             </span>
+                                             <span class="col-3 text-right">
+                                                <span class="card-btn-arrow">
+                                                   <span class="fas fa-chevron-down small"></span>
+                                                </span>
+                                             </span>
+                                          </span>
+                                       </button>
+                                    </h3>
+                                 </div>
+                                 <div id="chainCategoryOne" class="collapse show" aria-labelledby="chainCategoryHeadingOne" data-parent="#chainCategoryAccordion">
+                                    <div class="card-body pt-0 mt-1 px-5 pb-4">
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="chain1">
+                                             <label class="custom-control-label" for="chain1">Lorem Ipsum</label>
+                                          </div>
+                                          <span>749</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="chain2">
+                                             <label class="custom-control-label" for="chain2">Lorem Ipsum</label>
+                                          </div>
+                                          <span>630</span>
+                                       </div>
+                                       <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                          <div class="custom-control custom-checkbox">
+                                             <input type="checkbox" class="custom-control-input" id="chain3">
+                                             <label class="custom-control-label" for="chain3">Lorem Ipsum</label>
+                                          </div>
+                                          <span>58</span>
+                                       </div>
+                                       <!-- End Checkboxes -->
+                                       <!-- View More - Collapse -->
+                                       <div class="collapse" id="collapseChain">
+                                          <div class="form-group font-size-14 text-lh-md text-secondary mb-3 flex-center-between">
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="chain4">
+                                                <label class="custom-control-label" for="chain4">Lorem Ipsum</label>
+                                             </div>
+                                             <span>5</span>
+                                          </div>
+                                          <div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="chain5">
+                                                <label class="custom-control-label" for="chain5">Lorem Ipsum</label>
+                                             </div>
+                                             <span>1</span>
+                                          </div>
+                                       </div>
+                                       <!-- End View More - Collapse -->
+                                       <!-- Link -->
+                                       <a class="link link-collapse small font-size-1" data-toggle="collapse" href="#collapseChain" role="button" aria-expanded="false" aria-controls="collapseChain">
+                                          <span class="link-collapse_default font-size-14">Ver Más 13</span>
+                                          <span class="link-collapse_active font-size-14">Ver Menos</span>
+                                       </a>
+                                       <!-- End Link -->
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- End Accordion -->
+
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-8 col-xl-9 order-md-1 order-lg-2 pb-5 pb-lg-0">
+               <!-- Shop-control-bar Title -->
+               <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="font-size-21 font-weight-bold mb-0 text-lh-1">Estados Unidos: 3292 Hoteles encontrados</h3>
+               </div>
+               
+               <div class="mb-4">
+                  <ul class="d-inline-flex nav tab-nav-shop nav flex-nowrap border border-radius-3 tab-nav align-items-center py-2 px-0" id="pills-tab" role="tablist">
+                     <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1">
+                        <a class="nav-link font-weight-normal text-gray-1 text-lh-1dot6 py-1 px-4 px-wd-5 font-weight-normal font-size-15 active" id="pills-three-example1-tab" data-toggle="pill" href="#pills-three-example1" role="tab" aria-controls="pills-three-example1" aria-selected="true">
+                           Lista
+                        </a>
+                     </li>
+                     <li class="nav-item d-flex align-items-center flex-shrink-0 flex-xl-shrink-1 border-left">
+                        <a class="nav-link font-weight-normal text-gray-1 text-lh-1dot6 py-1 px-4 px-wd-5 font-weight-normal font-size-15 " id="pills-one-example1-tab" data-toggle="pill" href="#pills-one-example1" role="tab" aria-controls="pills-one-example1" aria-selected="false">
+                           Mapa
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- End shop-control-bar Title -->
+               <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab" data-target-group="groups">
+                     <ul class="d-block list-unstyled products-group prodcut-list-view">
+                        <!-- Start Skeleton card -->
+                        <li class="card mb-5 overflow-hidden">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <div class="position-relative">
+                                          <a href="" class="a-hotel-img d-block w-100 skeleton-img"  tabindex="0">
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="skeleton-star"></small>
+                                             <small class="skeleton-star"></small>
+                                             <small class="skeleton-star"></small>
+                                          </span>
+                                       </div>
+                                       <a href="">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1 skeleton-title"></span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1 skeleton-location">
+                                             </div>
+                                          </a>
+                                          <div class="mb-2">
+                                             <span class="skeleton-price font-weight-bold "></span>
+                                          </div>
+                                          <ul class="list-unstyled d-md-flex">
+                                             <li class="skeleton-tag border rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 ml-md-n1 mb-2 mb-md-0">
+                                                <span class="font-weight-normal font-size-14 text-green"></span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col col-xl-3 col-wd-3gdot5 align-self-center py-4 py-xl-0 border-top border-xl-top-0">
+                                    <div class="d-xl-flex flex-wrap border-xl-left ml-4 ml-xl-0 pr-xl-3 text-xl-right justify-content-xl-end">
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="my-xl-1">
+                                                <div class="d-flex align-items-center justify-content-xl-end mb-2">
+                                                   <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0 skeleton-review2"></span>
+                                                   <span class="font-size-17 font-weight-bold text-blue-dark-1 skeleton-review"></span>
+                                                </div>
+                                             </div>
+                                             <span class="font-size-14 text-gray-1 skeleton-number"></span>
+                                             <a href="" class="skeleton-btn align-items-center btn d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover width-223"></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <!-- End Skeleton card -->
+                        <li class="card mb-5 overflow-hidden">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <!-- CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                       <div class="position-relative">
+                                          <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                          </a>
+                                       </div>
+                                       <!-- END CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                          </span>
+                                       </div>
+                                       <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
+                                             <span class="font-size-20"><i class="fa-regular fa-heart"></i></span>
+                                          </button>
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle pl-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver en el mapa">
+                                             <span class="font-size-20"><i class="fa-solid fa-map-location-dot"></i></span>
+                                          </button>
+                                          
+                                       </div>
+                                       <a href="hotel-single.html">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                             INN Miami </span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="hotel-single.html" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                Estados Unidos
+                                             </div>
+                                          </a>
+                                          <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                          <ul class="list-unstyled d-md-flex mt-3">
+                                             <!-- quitar li si no hay desayuno gratis  -->
+                                             <li class="align-items-center bg-blue border border-blue d-flex mb-2 mb-md-0 px-3 py-1 rounded-xs text-lh-1 z-index-2">
+                                                <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                   incluido</span>
+                                             </li>
+                                             <!-- quitar li si no hay cancelación gratis  -->
+                                             <li class="align-items-center border border-blue d-flex mb-2 mb-md-0 ml-md-n1 px-3 py-1 rounded-xs text-lh-1">
+                                                <span class="font-size-14 font-weight-normal text-blue">Cancelación
+                                                   gratis</span>
+                                             </li>
+                                          </ul>
+                                          <!-- End ul de desayuno -->
+                                          <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                   Gratis</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="my-xl-1">
+                                          <div class="align-items-center d-flex mt-3">
+                                             <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                /5 </span>
+                                             <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>                                 
+                                 <div class="align-self-center border-top border-xl-top-0 col col-wd-3gdot5 col-xl-3">                                    
+                                    <div class="border-xl-left flex-wrap justify-content-xl-end pl-3 pr-3 text-xl-right">
+                                       <!-- END Cambio-->
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="mb-2">
+                                                <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                <span class="font-size-14 text-gray-1"> / Noche</span>
+                                             </div>
+                                             <!-- CAMBIO: clases del a -->
+                                             <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                             <!-- END Cambio-->
+                                             <button type="button" class="btn text-blue-dark-1"><i class="fa-solid fa-table-columns"></i>
+                                                Comparar</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>                       
+                     </ul>
+                     <div class="text-center text-md-left font-size-14 mb-3 text-lh-1">Mostrando 1 de 15</div>
+                     <nav aria-label="Page navigation">
+                        <ul class="list-pagination-1 pagination border border-color-4 rounded-sm overflow-auto overflow-xl-visible justify-content-md-center align-items-center py-2 mb-0">
+                           <li class="page-item">
+                              <a class="page-link border-right rounded-0 text-gray-5" href="#" aria-label="Previous">
+                                 <i class="fa-solid fa-angle-left font-size-10"></i>
+                                 <span class="sr-only">Previous</span>
+                              </a>
+                           </li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link font-size-14 active" href="#">2</a></li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">3</a></li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">4</a></li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">5</a></li>
+                           <li class="page-item disabled"><a class="page-link font-size-14" href="#">...</a></li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">66</a></li>
+                           <li class="page-item"><a class="page-link font-size-14" href="#">67</a></li>
+                           <li class="page-item">
+                              <a class="page-link border-left rounded-0 text-gray-5" href="#" aria-label="Next">
+                                 <i class="fa-solid fa-angle-right font-size-10"></i>
+                                 <span class="sr-only">Next</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="tab-pane fade " id="pills-one-example1" role="tabpanel" aria-labelledby="pills-one-example1-tab" data-target-group="groups">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d498685.9869923313!2d-86.16862438770518!3d12.450768153461965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sni!4v1669767376380!5m2!1ses!2sni" width="100%" height="100vh" frameborder="0" style="border:0; height: 100vh;" allowfullscreen=""></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="travelers" style="display: none; height: 80%;" class="w-md-30">
+         <div class="mb-2 mx-md-auto py-4 text-center">
+             <h2 class="font-size-2 font-weight-bolder sub-section-title text-black">Huespedes</h2>
+         </div> 
+         <div class="">
+            <!-- Div de cantidad de huespedes por habitación-->
+            <div class="">                                                        
+            <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Adultos</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="2">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 py-2 mb-3">
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Niños</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="0">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <!-- Si Hay un niño -->
+                <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Edad Niño 1</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Si Hay dos niños -->
+                <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Edad Niño 2</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Div de cantidad de huespedes por habitación-->
+        <!-- Div de cantidad de huespedes por habitación-->
+        <div> 
+         <div class="mb-2 py-2 w-100">
+            <span class="border-bottom d-block font-size-16 font-weight-bolder mx-3 pb-2 text-blue-1 text-left">Habitación 2</span>
+        </div>                                                      
+            <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Adultos</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="2">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 py-2 mb-3">
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Niños</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="0">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <!-- Si Hay un niño -->
+                <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Edad Niño 1</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Si Hay dos niños -->
+                <div class="w-100 py-2 mb-3">                                                            
+                <div class="js-quantity mx-3 row align-items-center justify-content-between">
+                    <span class="d-block font-size-16 font-weight-bolder text-secondary">Edad Niño 2</span>
+                    <div class="d-flex">
+                        <a class="js-minus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-minus btn-icon_inner"></small>
+                        </a>
+                        <input class="js-result form-control h-auto border-0 rounded p-0 max-width-6 text-center" type="text" value="1">
+                        <a class="js-plus btn btn-icon btn-medium btn-outline-secondary rounded-circle" href="javascript:;">
+                            <small class="fas fa-plus btn-icon_inner"></small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Div de cantidad de huespedes por habitación-->
+        <div class="py-2 w-100">
+         <a class="align-content-end d-block font-size-16 font-weight-bolder mx-4 text-right text-underline" href="javascript:;" role="button">Agregar habitación</a>
+     </div>
+     <a href="#" class="border-width-2 btn btn-primary d-block mt-3 rounded text-center">
+      Actualizar
+   </a>
+        </div>  
+        
+            
+     </div>
+   </main>
+   <!-- ========== END MAIN CONTENT ========== -->
+
+   <div class="d-inline-block bg-main-light login-cta pulse-animation px-3 py-3">
+      <a href="" class="text-blue-dark-1">
+         <i class="fa-solid fa-user d-none d-md-block"></i>
+         <span class="ml-md-6">Regístrate y recibe un <b>descuento extra!</b></span>
+      </a>
+   </div>
+
+   <!-- CTA bar Comparar -->
+   <div class="compare-div">
+      <div class="container">
+         <div class="row d-block d-xl-flex align-items-md-center">
+            <div class="align-items-center col-xl-8 d-lg-flex justify-content-xl-start">
+               <h4 class="font-weight-bold font-size-xs-16 font-size-22 mb-0 text-lh-sm">Comparar hoteles</h4>
+            </div>
+            <div class="col-xl-4 d-lg-flex justify-content-xl-end mb-4 mb-xl-0">
+               <a href="#ontargetModal" class="d-block align-items-center btn btn-primary height-51 rounded transition-3d-hover" data-modal-target="#ontargetModal"data-modal-effect="fadein">Comparar</a>
+               <a href="#" class="ml-3 align-items-center border-width-2 btn btn-outline-dark-2 d-flex height-51 rounded text-center transition-3d-hover">
+                  Cancelar
+               </a>               
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div id="ontargetModal" class="js-modal-window u-modal-window max-height-100vh width-100vw overflow-hidden" data-modal-type="ontarget" data-open-effect="zoomIn" data-close-effect="zoomOut" data-speed="500">
+   <div class="bg-white">
+       <div class="border-bottom py-xl-2">
+           <div class="row d-block d-md-flex flex-horizontal-center mx-0">
+               <div class="col-xl">
+                  <h2 class="font-size-21 font-weight-bold mb-0 text-lh-1">Compara y selecciona el mejor alojamiento para tu viaje</h2>
+               </div>
+               <div class="col-xl-auto">
+                   <div class="d-flex justify-content-center justify-content-xl-start">
+                       <button type="button" class="btn btn-primary height-51 rounded transition-3d-hover font-weight-normal font-size-14 rounded-xs mb-3 mb-xl-0" aria-label="Close" onclick="Custombox.modal.close();">
+                           <span aria-hidden="true">Volver a la lista</span>
+                           <i class="fas fa-times font-size-15 ml-3"></i>
+                       </button>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="height-100vh-72">
+           <div class="row no-gutters">
+               <div class="col-12 col-12 order-1 order-lg-0">
+                   <div class="pt-4 px-4 px-xl-5">                      
+                       <div class="js-scrollbar height-100vh-72">   
+                        <div class="table-responsive">
+                           <table class="table table-striped text-successtable-border border-light">
+                             <thead class="border-light">
+                               <tr>
+                                 <th width="25%" scope="col" class="border-top-0"></th>                                 
+                                 <th width="25%" scope="col" class="border-top-0">
+                                    <a href="hotel-single.html" class="d-block w-100" tabindex="0">
+                                       <img class="a-hotel-img-table" src="assets/img/300x230/img12.jpg" alt="">
+                                    </a>
+                                 </th>
+                                 <th width="25%" scope="col" class="border-top-0">
+                                    <a href="hotel-single.html" class="d-block w-100" tabindex="0">
+                                       <img class="a-hotel-img-table" src="assets/img/300x230/img12.jpg" alt="">
+                                    </a>
+                                 </th>
+                                 <th width="25%" scope="col" class="border-top-0">
+                                    <a href="hotel-single.html" class="d-block w-100" tabindex="0">
+                                       <img class="a-hotel-img-table" src="assets/img/300x230/img12.jpg" alt="">
+                                    </a>
+                                 </th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                                 <td scope="col" class="border-top-0"></th>
+                                 <td scope="col" class="border-top-0"><strong class="font-size-19 text-blue-1"><a href="hotel-single.html">Holiday INN</strong></a></td>
+                                 <td scope="col" class="border-top-0"><strong class="font-size-19 text-blue-1"><a href="hotel-single.html">Hilton</strong></a></td>
+                                 <td scope="col" class="border-top-0"><strong class="font-size-19 text-blue-1"><a href="hotel-single.html">Hard Rock</strong></a></td>
+                               </tr>
+                              <tr>
+                                 <th scope="row">Precio desde</th>
+                                 <td>
+                                    <span class="font-weight-bold font-size-20 ml-1">$150</span>
+                                    <span class="font-size-14 text-gray-1"> / Noche</span>
+                                 </td>
+                                 <td>
+                                    <span class="font-weight-bold font-size-20 ml-1">$120</span>
+                                    <span class="font-size-14 text-gray-1"> / Noche</span>
+                                 </td>
+                                 <td>
+                                    <span class="font-weight-bold font-size-20 ml-1">$130</span>
+                                    <span class="font-size-14 text-gray-1"> / Noche</span>
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">Estrellas</th>
+                                 <td>
+                                    <span class="green-lighter">
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="green-lighter">
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="green-lighter">
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                       <small class="fas fa-star font-size-10" aria-hidden="true"></small>
+                                    </span>
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">Ubicación desde el centro</th>
+                                 <td>8km</td>
+                                 <td>12km</td>
+                                 <td>10km</td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">Amenities</th>
+                                 <td>
+                                    <ul class="list-unstyled mt-3 list-amenities">
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-person-swimming"></i> <span class="px-1">Piscina</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-wifi"></i> <span class="px-1">WiFi
+                                             Gratis</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-bed"></i> <span class="px-1">Cama King</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-utensils"></i> <span class="px-1">Restaurantes</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-children"></i> <span class="px-1">Area para niños</span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                                 <td>
+                                    <ul class="list-unstyled mt-3 list-amenities">
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-person-swimming"></i> <span class="px-1">Piscina</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-wifi"></i> <span class="px-1">WiFi
+                                             Gratis</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap text-nowrap">
+                                          <i class="fa-solid fa-bed"></i> <span class="px-1">Cama King</span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                                 <td>
+                                    <ul class="list-unstyled mt-3 list-amenities">
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-person-swimming"></i> <span class="px-1">Piscina</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-wifi"></i> <span class="px-1">WiFi
+                                             Gratis</span>
+                                       </li>
+                                       <li class="align-items-center border border-green d-inline-block mx-1 my-1 no-dot px-2 py-1 rounded-xs text-green text-nowrap">
+                                          <i class="fa-solid fa-bed"></i> <span class="px-1">Cama King</span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <th scope="row">Valoración</th>
+                                 <td>
+                                    <div class="align-items-center d-flex">
+                                       <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                          /5 </span>
+                                       <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="align-items-center d-flex">
+                                       <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                          /5 </span>
+                                       <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <div class="align-items-center d-flex">
+                                       <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                          /5 </span>
+                                       <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                    </div>
+                                 </td>
+                               </tr>                               
+                             </tbody>
+                           </table>
+                         </div>
+
+                        
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- End On Target Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- End CTA bar Comparar-->
+   <div id="comparador" style="display: none; width: 60%; height: 80%;">
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mt-3 mb-2 py-4">
+          <h2 class="font-size-2 font-weight-bolder sub-section-title text-black">Elige la mejor opción para tu viaje</h2>
+      </div>
+      <div class="">
+          
+        </div>
+  </div>
+
+
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer mt-4">
+      <div class="border-top space-bottom-2 space-top-2">
+         <div class="container">
+            <div class="row justify-content-xl-between">
+               <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+                  <!-- Contacts -->
+                  <div class="d-md-flex d-lg-block">
+                     <div class="mb-5 mr-md-7 mr-lg-0">
+                        <a href="tel:(888)-1234-56789">
+                           <div class="d-block align-items-center">
+                              <div class="mr-4 footer-logo">
+                                 <a class="" href="index.html" aria-label="TripSeguro">
+                                    <img src="assets/img/logo_color.png" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="ml-md-6 ml-lg-0">
+                        <div class="mb-4">
+                           <h4 class="h6 font-weight-bold mb-2 font-size-17">Siguenos</h4>
+                        </div>
+                        <ul class="list-inline mb-0">
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-facebook-f btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-twitter  btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-instagram btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- End Contacts -->
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Sobre Nosotros</h4>
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">¿Quienes
+                           Somos?</a></li>
+                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Contácto</a></li>
+                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Términos de uso</a></li>
+                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Póliticas de privacidad</a></li>
+                  </ul>
+                  <!-- End List Group -->
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
+                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Contactanos</h4>
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">info@tripseguro.com</a>
+                     </li>
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">+000 0000 000</a>
+                     </li>
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Panamá</a>
+                     </li>
+                  </ul>
+                  <!-- End List Group -->
+               </div>
+               <div class="col-12 col-md-6 col-lg col-xl-3dot1">
+                  <div class="mb-4 mb-xl-2">
+                     <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Suscribete a nuestro Newsletter</h4>
+                     <p class="m-0 text-gray-1">Recibe ofertar y noticias para tus proximas vacaciones</p>
+                  </div>
+                  <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
+                     <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
+                     <div class="input-group">
+                        <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                        <div class="input-group-append ml-3">
+                           <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="space-1 border-top">
+
+         <div class="container">
+            <div class="d-md-block justify-content-between align-items-center">
+               <!-- Copyright -->
+               <p class="mb-3 mb-lg-0 text-gray-1 mb-3 mb-lg-0 text-center text-gray-1">© 2022 TripSeguro. All rights
+                  reserved</p>
+               <!-- End Copyright -->
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- ========== End FOOTER ========== -->
+   <!-- Page Preloader -->
+   <!-- <div id="jsPreloader" class="page-preloader">
+         <div class="page-preloader_content-centered">
+             <div class="spinner-grow text-primary" role="status">
+                 <span class="sr-only">Loading...</span>
+             </div>
+         </div>
+         </div> -->
+   <!-- End Page Preloader -->
+   <!-- Go to Top -->
+   <a class="js-go-to u-go-to-modern" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+      <span class="u-go-to-modern_inner"><i class="fa-solid fa-angle-up"></i></span>
+   </a>
+   <!-- End Go to Top -->
+   <!-- JS Global Compulsory -->
+   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+   <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+   <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+   <!-- JS Implementing Plugins -->
+   <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+   <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+   <script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+   <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+   <script src="assets/vendor/gmaps/gmaps.min.js"></script>
+   <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+   <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+   <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+   <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+   <!-- JS  -->
+   <script src="assets/js/hs.core.js"></script>
+   <script src="assets/js/components/hs.header.js"></script>
+   <script src="assets/js/components/hs.unfold.js"></script>
+   <script src="assets/js/components/hs.validation.js"></script>
+   <script src="assets/js/components/hs.show-animation.js"></script>
+   <script src="assets/js/components/hs.range-datepicker.js"></script>
+   <script src="assets/js/components/hs.selectpicker.js"></script>
+   <script src="assets/js/components/hs.range-slider.js"></script>
+   <script src="assets/js/components/hs.go-to.js"></script>
+   <script src="assets/js/components/hs.slick-carousel.js"></script>
+   <script src="assets/js/components/hs.quantity-counter.js"></script>
+   <script src="assets/js/components/hs.g-map.js"></script>
+   <script src="assets/js/components/hs.fancybox.js"></script>
+   <script src="assets/js/components/hs.modal-window.js"></script>
+   <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+   <!-- JS Plugins Init. -->
+   <script>
+      $(window).on('load', function () {
+         // Page preloader
+         setTimeout(function () {
+            $('#jsPreloader').fadeOut(500)
+         }, 800);
+      });
+
+      $(document).on('ready', function () {
+         // initialization of header
+         $.HSCore.components.HSHeader.init($('#header'));
+
+         // initialization of google map
+         function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+         }
+
+         // initialization of unfold component
+         $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+         // initialization of autonomous popups
+         $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+            autonomous: true
+         });
+
+         // initialization of show animations
+         $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+         // initialization of datepicker
+         $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+
+         // initialization of forms
+         $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+
+         // initialization of select
+         $.HSCore.components.HSSelectPicker.init('.js-select');
+         	// initialization of popups
+		$.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+         // initialization of malihu scrollbar
+         $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+         // initialization of quantity counter
+         $.HSCore.components.HSQantityCounter.init('.js-quantity');
+
+         // initialization of slick carousel
+         $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+         // initialization of go to
+         $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+   </script>
+</body>
+
+</html>

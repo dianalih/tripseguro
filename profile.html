@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+   <!-- Title -->
+   <title>Lista de Hoteles | TripSeguro</title>
+   <!-- Required Meta Tags Always Come First -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="favicon.png">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+   <link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+   <!-- CSS Implementing Plugins -->
+   <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+   <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+   <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+   <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
+   <link rel="stylesheet" href="documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+   <link rel="stylesheet" href="documentation/assets/vendor/prism/prism.css">
+   <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+   <link rel="stylesheet" href="assets/vendor/flatpickr/dist/flatpickr.min.css">
+   <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+   <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+   <link rel="stylesheet" href="assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+   <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+   <!-- CSS  Template -->
+   <link rel="stylesheet" href="assets/css/theme.css">
+   <!-- Font Awesome -->
+
+
+   <script src="https://kit.fontawesome.com/87cd9ac244.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- ========== HEADER ========== -->
+   <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-white u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="500" data-header-fix-effect="slide">
+      <div class="u-header_section u-header_shadow-on-show-hide py-4 py-xl-0">
+         <!-- Topbar -->
+         <div class="bg-violet u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
+            <div class="container">
+               <div class="d-flex align-items-center">
+                  <div class="position-relative u-header_hide-content">
+                     <ul class="list-inline u-header_topbar-nav-divider mb-0">
+                        <li class="list-inline-item mr-0"><a href="tel:(000)000000000" class="u-header_navbar-link">(000) 000 - 000 - 000</a></li>
+                        <li class="list-inline-item mr-0"><a href="mailto:info@tripseguro.com" class="u-header_navbar-link">info@tripseguro.com</a></li>
+                     </ul>
+                  </div>
+                  <div class="ml-auto d-flex align-items-center">
+                     <ul class="list-inline mb-0 mr-2 pr-1">
+                        <li class="list-inline-item">
+                           <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
+                              <span class="fab fa-facebook-f btn-icon_inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://twitter.com/" target="_blank">
+                              <span class="fab fa-twitter btn-icon_inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.instagram.com/" target="_blank">
+                              <span class="fab fa-instagram btn-icon_inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.linkedin.com/" target="_blank">
+                              <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="position-relative px-3 u-header_topbar-divider">
+                        <a href="#" class="d-flex align-items-center text-white py-2">
+                           <i class="fa-solid fa-user-plus mr-2 ml-1"></i>
+                           <span class="d-inline-block font-size-14 mr-1">Login</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Topbar -->
+         <div id="logoAndNav" class="container py-xl-3">
+            <!-- Nav -->
+            <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
+               <!-- Logo -->
+               <a class="navbar-brand u-header_navbar-brand-default u-header_navbar-brand-center u-header_navbar-brand-text-white" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Logo -->
+               <!-- Handheld Logo -->
+               <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-collapsed" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Handheld Logo -->
+               <!-- Scroll Logo -->
+               <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-on-scroll" href="index.html" aria-label="TripSeguro">
+                  <img src="assets/img/logo_color.png" alt="">
+               </a>
+               <!-- End Scroll Logo -->
+               <!-- Responsive Toggle Button -->
+               <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                  <span id="hamburgerTrigger" class="u-hamburger_box">
+                     <span class="u-hamburger_inner"></span>
+                  </span>
+               </button>
+               <!-- End Responsive Toggle Button -->
+               <!-- Navigation -->
+               <div id="navBar" class="navbar-collapse u-header_navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
+                  <ul class="navbar-nav u-header_navbar-nav">
+                     <!-- Home -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="homeMenu" class="nav-link u-header_nav-link  u-header_nav-link-border" href="#">Home</a>
+                     </li>
+                     <!-- End Home -->
+                     <!-- Hoteles -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Hoteles</a>
+                     </li>
+                     <!-- End Hoteles -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Autos</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Seguros</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Tours</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre
+                           Nosotros</a>
+                     </li>
+                     <!-- End Autos  -->
+                     <!-- Autos -->
+                     <li class="nav-item u-header_nav-item">
+                        <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Contáctanos</a>
+                     </li>
+                     <!-- End Autos  -->
+                  </ul>
+               </div>
+               <!-- End Navigation -->
+               <!-- Shopping Cart -->
+               <div class="pl-2 pl-md-4 ml-auto shopping-cart">
+                  <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                     <span class="font-size-25 text-primary-max-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                  </a>
+                  <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right p-0 mt-0 w-max-sm-100 u-unfold--css-animation font-size-16" aria-labelledby="shoppingCartDropdownInvoker" style="width: 500px; animation-duration: 300ms; right: 0px;">
+                     <div class="card">
+                        <!-- Header -->
+                        <div class="card-header border-color-8 py-3 px-5">
+                           <span class="font-weight-semi-bold">Tu carrito</span>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Body -->
+                        <div class="card-body p-0">
+                           <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
+                              <div class="media p-2 p-md-3">
+                                 <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
+                                    <img class="img-fluid rounded-pill" src="assets/img/80x80/img1.jpg" alt="Image Description">
+                                 </div>
+                                 <div class="media-body position-relative pl-md-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
+                                       <span class="d-block text-dark font-weight-bold">Hyatt New York</span>
+                                       <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
+                                          <i class="fas fa-trash"></i>
+                                       </button>
+                                    </div>
+                                    <span class="d-block text-gray-1">$590.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
+                              <div class="media p-2 p-md-3">
+                                 <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
+                                    <img class="img-fluid rounded-pill" src="assets/img/80x80/img2.jpg" alt="Image Description">
+                                 </div>
+                                 <div class="media-body position-relative pl-md-1">
+                                    <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
+                                       <span class="d-block text-dark font-weight-bold">Seguro basico</span>
+                                       <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
+                                          <i class="fas fa-trash"></i>
+                                       </button>
+                                    </div>
+                                    <span class="d-block text-gray-1">$100.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- End Body -->
+                        <!-- Footer -->
+                        <div class="card-footer border-0 p-3 px-md-5 py-md-4">
+                           <div class="mb-4 pb-md-1">
+                              <span class="d-block font-weight-semi-bold">Subtotal: $690.00</span>
+                           </div>
+                           <div class="d-md-flex button-inline-group-md mb-1">
+                              <a class="btn btn-block btn-md btn-gray-1 rounded-xs font-weight-bold transition-3d-hover" href="#">
+                                 Ver carrito
+                              </a>
+                              <a class="btn btn-block btn-md btn-blue-1 rounded-xs font-weight-bold transition-3d-hover mt-md-0 ml-md-5" href="#">
+                                 Pagar ahora
+                              </a>
+                           </div>
+                        </div>
+                        <!-- End Footer -->
+                     </div>
+                  </div>
+               </div>
+               <!-- End Shopping Cart -->
+            </nav>
+            <!-- End Nav -->
+         </div>
+      </div>
+   </header>
+   <!-- ========== End HEADER ========== -->
+   <!-- ========== MAIN CONTENT ========== -->
+   <main id="content" role="main" class="border-top">
+      <div class="profile_tab pt-4 pt-md-8">
+         <div class="container mb-4 mb-lg-11 pb-lg-1">
+            <div class="row">
+               <div class="col-md-5 col-lg-4 col-xl-3 mb-4">
+                  <div class="navbar-expand-lg navbar-expand-collapse-block navbar-collapse">
+                     <div id="sidebar" class="border border-color-7 rounded-xs">
+                        <div id="ProfileAccordion" class="accordion">
+                           <!-- Input -->
+                           <div class="card-collapse" id="profleDataHeading">
+                              <button type="button" class="btn btn-link btn-block card-btn py-2 px-5 text-lh-3 collapsed" data-toggle="collapse" data-target="#profileData" aria-expanded="false" aria-controls="profileData">
+                                 <div class="row align-items-center">
+                                    <span class="col-9 font-weight-bold font-size-17 text-dark">
+                                       Menu
+                                    </span>
+                                    <span class="col-3 text-right">
+                                       <span class="card-btn-arrow fas fa-chevron-down small">
+                                       </span>
+                                    </span>
+                                 </div>
+                              </button>
+                           </div>
+                           <div id="profileData" class="collapse show" aria-labelledby="profleDataHeading" data-parent="#ProfileAccordion">
+                              <ul class="nav flex-column profile-menu mb-0 tab-nav-list" id="pills-tab" role="tablist">
+                                 <li class="mx-0 mb-2 pb-1">
+                                    <a class="align-items-center d-flex px-4 text-gray-3 active" id="mis-datos-tab" data-toggle="pill" href="#mis-datos" role="tab" aria-controls="mis-datos" aria-selected="true">
+                                       <i class="fa-solid fa-user mr-1 text-gray-3 mr-2"></i>
+                                       Mis Datos
+                                    </a>
+                                 </li>
+
+                                 <li class="mx-0 mb-2 pb-1">
+                                    <a class="align-items-center d-flex px-4 text-gray-3" id="pills-cards-data-tab" data-toggle="pill" href="#pills-cards-data" role="tab" aria-controls="pills-cards-data" aria-selected="false">
+                                       <i class="fa-solid fa-credit-card mr-1 text-gray-3 mr-2"></i>
+                                       Datos de Pago
+                                    </a>
+                                 </li>
+
+                                 <li class="mx-0 mb-2 pb-1">
+                                    <a class="align-items-center d-flex px-4 text-gray-3" id="pills-my-bookings-tab" data-toggle="pill" href="#pills-my-bookings" role="tab" aria-controls="pills-my-bookings" aria-selected="false">
+                                       <i class="fa-solid fa-person-walking-luggage mr-1 text-gray-3 mr-2"></i>
+                                       Mis reservas
+                                    </a>
+                                 </li>
+
+                                 <li class="mx-0 mb-2 pb-1">
+                                    <a class="align-items-center d-flex px-4 text-gray-3" id="pills-favorites-tab" data-toggle="pill" href="#pills-favorites" role="tab" aria-controls="pills-favorites" aria-selected="false">
+                                       <i class="fa-solid fa-heart mr-1 text-gray-3 mr-2"></i>
+                                       Favoritos
+                                    </a>
+                                 </li>
+
+                                 <li class="mx-0 mb-2 pb-1">
+                                    <a class="align-items-center d-flex px-4 text-gray-3" id=""  href="#">
+                                       <i class="fa-solid fa-right-from-bracket mr-1 text-gray-3 mr-2"></i>
+                                       Cerrar Sesión
+                                    </a>
+                                 </li>
+                              </ul>
+                              <!-- Tab Content -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-7 col-lg-8 col-xl-9">
+                  <div class="tab-content" id="pills-tabContent">
+                     <div class="tab-pane fade show active" id="mis-datos" role="tabpanel" aria-labelledby="mis-datos-tab">
+
+                        <div class="px-0 px-md-5">
+                           <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
+                              Datos personales y de la cuenta
+                           </h5>
+                           <!-- Contacts Form -->
+                           <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
+                              <div class="row">
+                                 <!-- Input -->
+                                 <div class="col-sm-6 mb-4">
+                                    <div class="js-form-message">
+                                       <label class="form-label">Primer Nombre</label>
+                                       <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+
+                                 <!-- Input -->
+                                 <div class="col-sm-6 mb-4">
+                                    <div class="js-form-message">
+                                       <label class="form-label">Apellido</label>
+                                       <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+
+                                 <!-- Input -->
+                                 <div class="col-sm-6 mb-4">
+                                    <div class="js-form-message">
+                                       <label class="form-label">Email</label>
+                                       <input type="email" class="form-control" name="email" placeholder="tuemail@email.com" aria-label="" required="" data-msg="Ingrese un email valido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+                                 <!-- Input -->
+                                 <div class="col-sm-6 mb-4">
+                                    <div class="js-form-message">
+                                       <label class="form-label">Teléfono</label>
+                                       <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" data-error-class="u-has-error" data-success-class="u-has-success">
+                                    </div>
+                                 </div>
+                                 <!-- End Input -->
+                                 <div class="w-100"></div>
+                              </div>
+                              <div class="input-group-append">
+                                 <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="update">Actualizar</button>
+                              </div>
+                           </form>
+                           <div class="border-top card-footer_bottom font-size-15 mt-4 py-4 text-left">
+                              <span class="text-gray-1">¿Quieres actualizar tu constraseña?</span>
+                              <a class="font-weight-bold" href="#">Enviar Email</a>
+                           </div>
+                           <!-- End Contacts Form -->
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="pills-cards-data" role="tabpanel" aria-labelledby="pills-cards-data-tab">
+                        <div class="px-0 px-md-5 profile-cards">
+                           <h4 class="text-size-21 font-weight-semi-bold text-gray-3 mb-3 pb-1">Datos de pago</h4>
+                           <!-- Nav Classic -->
+                           <ul class="border border-0 mx-n3 nav nav-justified pb-5 pb-md-0" role="tablist">
+                              <li class="nav-item">
+                                 <a class="active font-weight-medium nav-link bg-gray p-0" id="pills-mis-tarjetas-tab" data-toggle="pill" href="#pills-mis-tarjetas" role="tab" aria-controls="pills-mis-tarjetas" aria-selected="true">
+                                    <div class="py-1 d-md-flex justify-content-md-center align-items-md-center flex-wrap">
+                                       <div class="w-100 text-dark">Mis tarjetas</div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="font-weight-medium nav-link bg-gray p-0" id="pills-nueva-tarjeta-tab" data-toggle="pill" href="#pills-nueva-tarjeta" role="tab" aria-controls="pills-nueva-tarjeta" aria-selected="false">
+                                    <div class="py-1 d-md-flex justify-content-md-center align-items-md-center flex-wrap">
+                                       <div class="w-100 text-dark">Agregar nueva tarjeta</div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                           <!-- End Nav Classic -->
+
+                           <!-- Tab Content -->
+                           <div class="tab-content">
+                              <div class="tab-pane fade pt-md-4 show active" id="pills-mis-tarjetas" role="tabpanel" aria-labelledby="pills-mis-tarjetas-tab">
+                                 <div class="product-item_outer w-100">
+                                    <div class="border p-1 row">
+                                       <div class="col-3 flex-horizontal-center">
+                                          <div class="">
+                                             <span class="font-weight-bold font-size-16 ml-1">VISA</span>
+                                          </div>
+                                       </div>
+                                       <div class="col-3 flex-horizontal-center">
+                                          <div class="">
+                                             <span class="font-weight-bold font-size-16 ml-1">•••• 0350</span>
+                                          </div>
+                                       </div>
+                                       <div class="col-3 flex-horizontal-center">
+                                          <div class="">
+                                             <span class="font-weight-bold font-size-16 ml-1">05 / 24</span>
+                                          </div>
+                                       </div>
+                                       <div class="col-3">
+                                          <div class="text-center">
+                                             <a href="#" class="btn btn-outline-primary border-radius-3 border-width-2 font-weight-bold py-1 text-lh-lg"><i class="fa-solid fa-trash-can"></i></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="tab-pane fade pt-8" id="pills-nueva-tarjeta" role="tabpanel" aria-labelledby="pills-nueva-tarjeta-tab">
+                                 <form class="js-validate">
+                                    <div class="row">
+                                       <!-- Input -->
+                                       <div class="col-sm-6 mb-4">
+                                          <div class="js-form-message">
+                                             <label class="form-label">Titular de la tarjeta</label>
+                                             <input type="text" class="form-control" name="Cardname" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                          </div>
+                                       </div>
+                                       <!-- End Input -->
+                                       <!-- Input -->
+                                       <div class="col-sm-6 mb-4">
+                                          <div class="js-form-message">
+                                             <label class="form-label">Numero de tarjeta </label>
+                                             <input type="number" class="form-control" name="Cardnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                          </div>
+                                       </div>
+                                       <!-- End Input -->
+                                       <div class="w-100"></div>
+                                       <!-- Input -->
+                                       <div class="col-sm-6 mb-4">
+                                          <div class="row">
+                                             <div class="col-sm-6 mb-4 mb-md-0">
+                                                <div class="js-form-message">
+                                                   <label class="form-label">Mes de expiración </label>
+                                                   <input type="number" class="form-control" name="Expirymonth" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="js-form-message">
+                                                   <label class="form-label">Año de Expiración </label>
+                                                   <input type="number" class="form-control" name="Expiryyear" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- End Input -->
+                                       <!-- Input -->
+                                       <div class="col-sm-6 mb-4">
+                                          <div class="js-form-message">
+                                             <label class="form-label"> CCV </label>
+                                             <input type="number" class="form-control" name="ccvnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                          </div>
+                                       </div>
+                                       <!-- End Input -->
+                                       <div class="input-group-append px-2 px-md-3">
+                                          <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="addCard">Agregar</button>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                           <!-- End Tab Content -->
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="pills-my-bookings" role="tabpanel" aria-labelledby="pills-my-bookings-tab">
+                        <div class="px-0 px-md-5">
+                           <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
+                              Mis Reservas
+                           </h5>
+                           <ul class="d-block list-unstyled products-group prodcut-list-view">
+                              <li class="card mb-5 overflow-hidden">
+                                 <div class="product-item_outer w-100">
+                                    <div class="row">
+                                       <div class="col-md-5">
+                                          <div class="product-item_header">
+                                             <div class="position-relative">
+                                                <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-7">
+                                          <div class="w-100 position-relative m-4 m-md-0 pr-4">
+                                             <div class="mb-1 pb-1">
+                                                <span class="green-lighter">
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                </span>
+                                             </div>
+                                             <a href="hotel-single.html">
+                                                <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">
+                                                   Holiday INN Miami </span>
+                                             </a>
+                                             <div class="card-body p-0">
+                                                <a href="hotel-single.html" class="d-block mb-1">
+                                                   <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                      <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                      Estados Unidos
+                                                   </div>
+                                                </a>
+                                                <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                                <ul class="list-unstyled d-md-flex mt-3">
+                                                   <!-- quitar li si no hay desayuno gratis  -->
+                                                   <li class="border border-green bg-green rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                      <span class="font-weight-normal font-size-14 text-white">Desayuno incluido</span>
+                                                   </li>
+                                                </ul>
+                                                <!-- End ul de desayuno -->                                                
+                                             </div>
+                                             <div class="border-top d-flex font-size-15 justify-content-between mt-3 pb-2 pt-3">
+                                                <span>01 May 23 <span class="font-weight-bold">-</span> 04 May 23</span>
+                                             </div>
+                                             <div class="d-flex justify-content-between pb-2 font-size-15">
+                                                <span class="">2 habitaciones | 4 huespedes</span>
+                                             </div>
+                                             <div class="border-top d-flex justify-content-between py-2 font-size-17 font-weight-bold">
+                                                <span class="font-weight-bold">Total</span> <span class="">$150.00</span>
+                                             </div>
+                                             <div class="border-top font-size-15 py-2 text-left">
+                                                <a type="button" href="javascript:;" data-src="#cancelbooking" data-speed="700"  data-ol-has-click-handler="" class="js-fancybox font-weight-bold"> 
+                                                   Cancelar Reservación
+                                               </a> 
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="card mb-5 overflow-hidden">
+                                 <div class="product-item_outer w-100">
+                                    <div class="row">
+                                       <div class="col-md-5">
+                                          <div class="product-item_header">
+                                             <div class="position-relative">
+                                                <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-7">
+                                          <div class="w-100 position-relative m-4 m-md-0 pr-4">
+                                             <div class="mb-1 pb-1">
+                                                <span class="green-lighter">
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                </span>
+                                             </div>
+                                             <a href="hotel-single.html">
+                                                <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">
+                                                   Holiday INN Miami </span>
+                                             </a>
+                                             <div class="card-body p-0">
+                                                <a href="hotel-single.html" class="d-block mb-1">
+                                                   <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                      <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                      Estados Unidos
+                                                   </div>
+                                                </a>
+                                                <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                                <ul class="list-unstyled d-md-flex mt-3">
+                                                   <!-- quitar li si no hay desayuno gratis  -->
+                                                   <li class="border border-green bg-green rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                      <span class="font-weight-normal font-size-14 text-white">Desayuno incluido</span>
+                                                   </li>
+                                                </ul>
+                                                <!-- End ul de desayuno -->                                                
+                                             </div>
+                                             <div class="border-top d-flex font-size-15 justify-content-between mt-3 pb-2 pt-3">
+                                                <span>01 Abr 23 <span class="font-weight-bold">-</span> 04 Abr 23</span>
+                                             </div>
+                                             <div class="d-flex justify-content-between pb-2 font-size-15">
+                                                <span class="">2 habitaciones | 4 huespedes</span>
+                                             </div>
+                                             <div class="border-top d-flex justify-content-between py-2 font-size-17 font-weight-bold">
+                                                <span class="font-weight-bold">Total</span> <span class="">$150.00</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="pills-favorites" role="tabpanel" aria-labelledby="pills-favorites-tab">
+                        <div class="px-0 px-md-5">
+                           <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
+                              Favoritos
+                           </h5>
+                           <ul class="d-block list-unstyled products-group prodcut-list-view">
+                              <li class="card mb-5 overflow-hidden">
+                                 <div class="product-item_outer w-100">
+                                    <div class="row">
+                                       <div class="col-md-5 col-xl-4">
+                                          <div class="product-item_header">
+                                             <div class="position-relative">
+                                                <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-7 col-xl-5 pl-0 flex-horizontal-center">
+                                          <div class="w-100 position-relative m-4 m-md-0">
+                                             <div class="mb-1 pb-1">
+                                                <span class="green-lighter">
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                   <small class="fas fa-star font-size-10"></small>
+                                                </span>
+                                             </div>
+                                             <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                                <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Eliminar">
+                                                   <span class="font-size-20 text-blue-1"><i class="fa-solid fa-heart"></i></span>
+                                                   
+                                                </button>
+                                                
+                                             </div>
+                                             <a href="hotel-single.html">
+                                                <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                                   INN Miami </span>
+                                             </a>
+                                             <div class="card-body p-0">
+                                                <a href="hotel-single.html" class="d-block mb-1">
+                                                   <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                      <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                      Estados Unidos
+                                                   </div>
+                                                </a>
+                                                <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                                <ul class="list-unstyled d-md-flex mt-3">
+                                                   <!-- quitar li si no hay desayuno gratis  -->
+                                                   <li class="border border-green bg-green rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 mb-2 mb-md-0">
+                                                      <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                         incluido</span>
+                                                   </li>
+                                                   <!-- quitar li si no hay cancelación gratis  -->
+                                                   <li class="border border-green rounded-xs d-flex align-items-center text-lh-1 py-1 px-3 ml-md-n1 mb-2 mb-md-0">
+                                                      <span class="font-weight-normal font-size-14 text-green">Cancelación
+                                                         gratis</span>
+                                                   </li>
+                                                </ul>
+                                                <!-- End ul de desayuno -->
+                                                <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                                   <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                      <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                                   </li>
+                                                   <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                      <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                         Gratis</span>
+                                                   </li>
+                                                   <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                      <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <div class="my-xl-1">
+                                                <div class="align-items-center d-flex mt-3">
+                                                   <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                      /5 </span>
+                                                   <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>                                 
+                                       <div class="col col-xl-3 align-self-center py-4 py-xl-0 border-top border-xl-top-0">
+                                          <!-- CAMBIO: el boton de salia del tamaño, aqui solo cambie algunas clases -->
+                                          <div class="border-xl-left flex-wrap justify-content-xl-end mx-2 text-xl-right">
+                                             <!-- END Cambio-->
+                                             <div class="">
+                                                <div class="mb-0 px-2">
+                                                   <div class="mb-2">
+                                                      <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                      <span class="font-size-14 text-gray-1"> / Noche</span>
+                                                   </div>
+                                                   <!-- CAMBIO: clases del a -->
+                                                   <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                                   <!-- END Cambio-->                                                   
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>                       
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="cancelbooking" style="display: none;" class="p-0 w-md-70">
+         <div>
+             <div class="border-bottom-1 mt-3 mx-4 p-3">
+                 <h4 class="mb-0 font-size-18 font-weight-bolder text-dark">Condiciones de cancelación</h4>
+                 <p class="font-size-17 mb-0 text-gray-1">La penalización por cancelación se detalla a continuación</p>
+              </div>
+     <div class="pt-1 px-4">
+             <table class="mb-0 table table-borderless">            
+                 <tr class="border-bottom-1">
+                     <th><h4 class="mb-0 font-size-18 font-weight-bolder text-dark">Desde</h4></th>
+                     <th><h4 class="mb-0 font-size-18 font-weight-bolder text-dark">Hasta</h4></th>
+                     <th><h4 class="mb-0 font-size-18 font-weight-bolder text-dark">Cobro</h4></th>
+                 </tr>
+                 <tr>
+                     <td><p class="font-size-17 mb-0 text-gray-1">24/03/2023</p></td>
+                     <td><p class="font-size-17 mb-0 text-gray-1">01/04/2023</p></td>
+                     <td><p class="font-size-17 mb-0 text-gray-1">82.00 US$</p></td>
+                 </tr>            
+             </table>  
+         </div>      
+                 <div class="bg-gray-2 border-top p-4">
+                     <h4 class="mb-0 font-size-17 font-weight-bolder text-dark">¿Está seguro que desea cancelar esta reservación?</h4>
+                     <div>
+                        <button type="button" class="btn btn-primary btn-sm mt-2">Cancelar mi reservar</button>
+<button type="button" class="btn btn-outline-blue-1 btn-sm mt-2" data-fancybox-close>Mantener mi reserva</button>
+                     </div>
+                  </div>
+
+         </div>
+     
+     </div>
+   </main>
+   <!-- ========== END MAIN CONTENT ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer mt-4">
+      <div class="border-top space-bottom-2 space-top-2">
+         <div class="container">
+            <div class="row justify-content-xl-between">
+               <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+                  <!-- Contacts -->
+                  <div class="d-md-flex d-lg-block">
+                     <div class="mb-5 mr-md-7 mr-lg-0">
+                        <a href="tel:(888)-1234-56789">
+                           <div class="d-block align-items-center">
+                              <div class="mr-4 footer-logo">
+                                 <a class="" href="index.html" aria-label="TripSeguro">
+                                    <img src="assets/img/logo_color.png" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="ml-md-6 ml-lg-0">
+                        <div class="mb-4">
+                           <h4 class="h6 font-weight-bold mb-2 font-size-17">Siguenos</h4>
+                        </div>
+                        <ul class="list-inline mb-0">
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-facebook-f btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-twitter  btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-instagram btn-icon_inner"></span>
+                              </a>
+                           </li>
+                           <li class="list-inline-item mr-2">
+                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                 <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- End Contacts -->
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Sobre Nosotros</h4>
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">¿Quienes
+                           Somos?</a></li>
+                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Contácto</a></li>
+                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Términos de uso</a></li>
+                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Póliticas de privacidad</a></li>
+                  </ul>
+                  <!-- End List Group -->
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
+                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Contactanos</h4>
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-borderless mb-0">
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">info@tripseguro.com</a>
+                     </li>
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">+000 0000 000</a>
+                     </li>
+                     <li>
+                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Panamá</a>
+                     </li>
+                  </ul>
+                  <!-- End List Group -->
+               </div>
+               <div class="col-12 col-md-6 col-lg col-xl-3dot1">
+                  <div class="mb-4 mb-xl-2">
+                     <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Suscribete a nuestro Newsletter</h4>
+                     <p class="m-0 text-gray-1">Recibe ofertar y noticias para tus proximas vacaciones</p>
+                  </div>
+                  <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
+                     <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
+                     <div class="input-group">
+                        <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                        <div class="input-group-append ml-3">
+                           <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="space-1 border-top">
+
+         <div class="container">
+            <div class="d-md-block justify-content-between align-items-center">
+               <!-- Copyright -->
+               <p class="mb-3 mb-lg-0 text-gray-1 mb-3 mb-lg-0 text-center text-gray-1">© 2022 TripSeguro. All rights
+                  reserved</p>
+               <!-- End Copyright -->
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- ========== End FOOTER ========== -->
+   <!-- Page Preloader -->
+   <!-- <div id="jsPreloader" class="page-preloader">
+         <div class="page-preloader_content-centered">
+             <div class="spinner-grow text-primary" role="status">
+                 <span class="sr-only">Loading...</span>
+             </div>
+         </div>
+         </div> -->
+   <!-- End Page Preloader -->
+   <!-- Go to Top -->
+   <a class="js-go-to u-go-to-modern" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+      <span class="u-go-to-modern_inner"><i class="fa-solid fa-angle-up"></i></span>
+   </a>
+   <!-- End Go to Top -->
+   <!-- JS Global Compulsory -->
+   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+   <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+   <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+   <!-- JS Implementing Plugins -->
+   <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+   <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+   <script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+   <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+   <script src="assets/vendor/gmaps/gmaps.min.js"></script>
+   <script src="assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+   <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+   <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+   <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+   <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+   <!-- JS  -->
+   <script src="assets/js/hs.core.js"></script>
+   <script src="assets/js/components/hs.header.js"></script>
+   <script src="assets/js/components/hs.unfold.js"></script>
+   <script src="assets/js/components/hs.validation.js"></script>
+   <script src="assets/js/components/hs.show-animation.js"></script>
+   <script src="assets/js/components/hs.range-datepicker.js"></script>
+   <script src="assets/js/components/hs.selectpicker.js"></script>
+   <script src="assets/js/components/hs.range-slider.js"></script>
+   <script src="assets/js/components/hs.go-to.js"></script>
+   <script src="assets/js/components/hs.slick-carousel.js"></script>
+   <script src="assets/js/components/hs.quantity-counter.js"></script>
+   <script src="assets/js/components/hs.g-map.js"></script>
+   <script src="assets/js/components/hs.fancybox.js"></script>
+   <script src="assets/js/components/hs.modal-window.js"></script>
+   <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+   <!-- JS Plugins Init. -->
+   <script>
+      $(window).on('load', function () {
+         // Page preloader
+         setTimeout(function () {
+            $('#jsPreloader').fadeOut(500)
+         }, 800);
+      });
+
+      $(document).on('ready', function () {
+         // initialization of header
+         $.HSCore.components.HSHeader.init($('#header'));
+
+         // initialization of google map
+         function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+         }
+
+         // initialization of unfold component
+         $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+         // initialization of autonomous popups
+         $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-modal-window', {
+            autonomous: true
+         });
+
+         // initialization of show animations
+         $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+         // initialization of datepicker
+         $.HSCore.components.HSRangeDatepicker.init('.js-range-datepicker');
+
+         // initialization of forms
+         $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+
+         // initialization of select
+         $.HSCore.components.HSSelectPicker.init('.js-select');
+         // initialization of popups
+         $.HSCore.components.HSFancyBox.init('.js-fancybox');
+
+         // initialization of malihu scrollbar
+         $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+         // initialization of quantity counter
+         $.HSCore.components.HSQantityCounter.init('.js-quantity');
+
+         // initialization of form validation
+         $.HSCore.components.HSValidation.init('.js-validate');
+
+         // initialization of slick carousel
+         $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+         // initialization of go to
+         $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+   </script>
+</body>
+
+</html>
