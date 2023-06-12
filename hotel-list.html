@@ -35,9 +35,9 @@
    <script src="https://kit.fontawesome.com/87cd9ac244.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-tripseguro-body">
    <!-- ========== HEADER ========== -->
-   <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-white u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="500" data-header-fix-effect="slide">
+   <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-white u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="300" data-header-fix-effect="slide">
       <div class="u-header_section u-header_shadow-on-show-hide py-0">
          <!-- Topbar -->
          <div class="bg-violet u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
@@ -92,7 +92,7 @@
             </div>
         </div>
          <!-- End Topbar -->
-         <div id="logoAndNav" class="container py-xl-3">
+         <div id="logoAndNav" class="container">
             <!-- Nav -->
             <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
                <!-- Logo -->
@@ -233,7 +233,7 @@
    </header>
    <!-- ========== End HEADER ========== -->
    <!-- ========== MAIN CONTENT ========== -->
-   <main id="content" role="main" class="border-top">
+   <main id="content" role="main" class="border-top bg-tripseguro-body">
       <div class="container pt-5 pt-xl-8">
          <div class="row mb-5 mb-lg-8 mt-xl-1">
             <div class="col-lg-4 col-xl-3 order-lg-1 width-md-50">
@@ -245,13 +245,7 @@
                   <div id="sidebar" class="collapse navbar-collapse">
                      <div class="mb-6 w-100">
                         <div class="pb-4 mb-2">
-
-
-
-
-
-
-                           <div class="sidenav border border-color-8 rounded-xs">
+                           <div class="bg-white sidenav border border-color-8 rounded-xs">
                               <div id="DestinoAccordion" class="accordion mb-1">
                                  <!-- Input -->
                                  <div class="card-collapse" id="destinoDataHeading">
@@ -311,7 +305,7 @@
                            </div>
                         </div>
                         </div>
-                        <div class="sidenav border border-color-8 rounded-xs">
+                        <div class="bg-white sidenav border border-color-8 rounded-xs">
                            <!-- Accordiaon -->
 
                            <div id="CancelationAccordion" class="accordion rounded shadow-none border-bottom">
@@ -702,7 +696,7 @@
                <div class="tab-content" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab" data-target-group="groups">
                      <ul class="d-block list-unstyled products-group prodcut-list-view">
-                        <!-- Start Skeleton card -->
+                        <!-- 
                         <li class="card mb-5 overflow-hidden">
                            <div class="product-item_outer w-100">
                               <div class="row">
@@ -761,8 +755,412 @@
                               </div>
                            </div>
                         </li>
-                        <!-- End Skeleton card -->
-                        <li class="card mb-5 overflow-hidden">
+                         End Skeleton card -->
+                        <li class="bg-white card mb-5 overflow-hidden shadow-soft">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <!-- CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                       <div class="position-relative">
+                                          <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                          </a>
+                                       </div>
+                                       <!-- END CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                          </span>
+                                       </div>
+                                       <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
+                                             <span class="font-size-20"><i class="fa-regular fa-heart"></i></span>
+                                          </button>
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle pl-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver en el mapa">
+                                             <span class="font-size-20"><i class="fa-solid fa-map-location-dot"></i></span>
+                                          </button>
+                                          
+                                       </div>
+                                       <a href="hotel-single.html">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                             INN Miami </span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="hotel-single.html" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                Estados Unidos
+                                             </div>
+                                          </a>
+                                          <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                          <ul class="list-unstyled d-md-flex mt-3">
+                                             <!-- quitar li si no hay desayuno gratis  -->
+                                             <li class="align-items-center bg-blue border border-blue d-flex mb-2 mb-md-0 px-3 py-1 rounded-xs text-lh-1 z-index-2">
+                                                <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                   incluido</span>
+                                             </li>
+                                             <!-- quitar li si no hay cancelación gratis  -->
+                                             <li class="align-items-center border border-blue d-flex mb-2 mb-md-0 ml-md-n1 px-3 py-1 rounded-xs text-lh-1">
+                                                <span class="font-size-14 font-weight-normal text-blue">Cancelación
+                                                   gratis</span>
+                                             </li>
+                                          </ul>
+                                          <!-- End ul de desayuno -->
+                                          <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                   Gratis</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="my-xl-1">
+                                          <div class="align-items-center d-flex mt-3">
+                                             <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                /5 </span>
+                                             <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>                                 
+                                 <div class="align-self-center border-top border-xl-top-0 col col-wd-3gdot5 col-xl-3">                                    
+                                    <div class="border-xl-left flex-wrap justify-content-xl-end pl-3 pr-3 text-xl-right">
+                                       <!-- END Cambio-->
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="mb-2">
+                                                <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                <span class="font-size-14 text-gray-1"> / Noche</span>
+                                             </div>
+                                             <!-- CAMBIO: clases del a -->
+                                             <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                             <!-- END Cambio-->
+                                             <button type="button" class="btn text-blue-dark-1"><i class="fa-solid fa-table-columns"></i>
+                                                Comparar</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li> 
+                        <li class="bg-white card mb-5 overflow-hidden shadow-soft">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <!-- CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                       <div class="position-relative">
+                                          <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                          </a>
+                                       </div>
+                                       <!-- END CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                          </span>
+                                       </div>
+                                       <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
+                                             <span class="font-size-20"><i class="fa-regular fa-heart"></i></span>
+                                          </button>
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle pl-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver en el mapa">
+                                             <span class="font-size-20"><i class="fa-solid fa-map-location-dot"></i></span>
+                                          </button>
+                                          
+                                       </div>
+                                       <a href="hotel-single.html">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                             INN Miami </span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="hotel-single.html" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                Estados Unidos
+                                             </div>
+                                          </a>
+                                          <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                          <ul class="list-unstyled d-md-flex mt-3">
+                                             <!-- quitar li si no hay desayuno gratis  -->
+                                             <li class="align-items-center bg-blue border border-blue d-flex mb-2 mb-md-0 px-3 py-1 rounded-xs text-lh-1 z-index-2">
+                                                <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                   incluido</span>
+                                             </li>
+                                             <!-- quitar li si no hay cancelación gratis  -->
+                                             <li class="align-items-center border border-blue d-flex mb-2 mb-md-0 ml-md-n1 px-3 py-1 rounded-xs text-lh-1">
+                                                <span class="font-size-14 font-weight-normal text-blue">Cancelación
+                                                   gratis</span>
+                                             </li>
+                                          </ul>
+                                          <!-- End ul de desayuno -->
+                                          <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                   Gratis</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="my-xl-1">
+                                          <div class="align-items-center d-flex mt-3">
+                                             <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                /5 </span>
+                                             <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>                                 
+                                 <div class="align-self-center border-top border-xl-top-0 col col-wd-3gdot5 col-xl-3">                                    
+                                    <div class="border-xl-left flex-wrap justify-content-xl-end pl-3 pr-3 text-xl-right">
+                                       <!-- END Cambio-->
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="mb-2">
+                                                <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                <span class="font-size-14 text-gray-1"> / Noche</span>
+                                             </div>
+                                             <!-- CAMBIO: clases del a -->
+                                             <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                             <!-- END Cambio-->
+                                             <button type="button" class="btn text-blue-dark-1"><i class="fa-solid fa-table-columns"></i>
+                                                Comparar</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li> 
+                        <li class="bg-white card mb-5 overflow-hidden shadow-soft">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <!-- CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                       <div class="position-relative">
+                                          <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                          </a>
+                                       </div>
+                                       <!-- END CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                          </span>
+                                       </div>
+                                       <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
+                                             <span class="font-size-20"><i class="fa-regular fa-heart"></i></span>
+                                          </button>
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle pl-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver en el mapa">
+                                             <span class="font-size-20"><i class="fa-solid fa-map-location-dot"></i></span>
+                                          </button>
+                                          
+                                       </div>
+                                       <a href="hotel-single.html">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                             INN Miami </span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="hotel-single.html" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                Estados Unidos
+                                             </div>
+                                          </a>
+                                          <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                          <ul class="list-unstyled d-md-flex mt-3">
+                                             <!-- quitar li si no hay desayuno gratis  -->
+                                             <li class="align-items-center bg-blue border border-blue d-flex mb-2 mb-md-0 px-3 py-1 rounded-xs text-lh-1 z-index-2">
+                                                <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                   incluido</span>
+                                             </li>
+                                             <!-- quitar li si no hay cancelación gratis  -->
+                                             <li class="align-items-center border border-blue d-flex mb-2 mb-md-0 ml-md-n1 px-3 py-1 rounded-xs text-lh-1">
+                                                <span class="font-size-14 font-weight-normal text-blue">Cancelación
+                                                   gratis</span>
+                                             </li>
+                                          </ul>
+                                          <!-- End ul de desayuno -->
+                                          <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                   Gratis</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="my-xl-1">
+                                          <div class="align-items-center d-flex mt-3">
+                                             <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                /5 </span>
+                                             <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>                                 
+                                 <div class="align-self-center border-top border-xl-top-0 col col-wd-3gdot5 col-xl-3">                                    
+                                    <div class="border-xl-left flex-wrap justify-content-xl-end pl-3 pr-3 text-xl-right">
+                                       <!-- END Cambio-->
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="mb-2">
+                                                <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                <span class="font-size-14 text-gray-1"> / Noche</span>
+                                             </div>
+                                             <!-- CAMBIO: clases del a -->
+                                             <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                             <!-- END Cambio-->
+                                             <button type="button" class="btn text-blue-dark-1"><i class="fa-solid fa-table-columns"></i>
+                                                Comparar</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li> 
+                        <li class="bg-white card mb-5 overflow-hidden shadow-soft">
+                           <div class="product-item_outer w-100">
+                              <div class="row">
+                                 <div class="col-md-5 col-xl-4">
+                                    <div class="product-item_header">
+                                       <!-- CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                       <div class="position-relative">
+                                          <a href="hotel-single.html" class="a-hotel-img d-block w-100" tabindex="0" style="background-image: url(assets/img/300x230/img12.jpg);">
+                                          </a>
+                                       </div>
+                                       <!-- END CAMBIO: quite la imagen para hacerla bg del tag a-->
+                                    </div>
+                                 </div>
+                                 <div class="col-md-7 col-xl-5 col-wd-4gdot5 flex-horizontal-center">
+                                    <div class="w-100 position-relative m-4 m-md-0">
+                                       <div class="mb-1 pb-1">
+                                          <span class="green-lighter">
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                             <small class="fas fa-star font-size-10"></small>
+                                          </span>
+                                       </div>
+                                       <div class="position-absolute top-0 right-0 d-none d-md-block">
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
+                                             <span class="font-size-20"><i class="fa-regular fa-heart"></i></span>
+                                          </button>
+                                          <button type="button" class="btn btn-sm btn-icon rounded-circle pl-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ver en el mapa">
+                                             <span class="font-size-20"><i class="fa-solid fa-map-location-dot"></i></span>
+                                          </button>
+                                          
+                                       </div>
+                                       <a href="hotel-single.html">
+                                          <span class="font-weight-medium font-size-17 text-dark d-flex mb-1">Holiday
+                                             INN Miami </span>
+                                       </a>
+                                       <div class="card-body p-0">
+                                          <a href="hotel-single.html" class="d-block mb-1">
+                                             <div class="d-flex flex-wrap flex-xl-nowrap align-items-center font-size-14 text-gray-1">
+                                                <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Miami,
+                                                Estados Unidos
+                                             </div>
+                                          </a>
+                                          <!-- Si no hay desayuno, ni cancelación gratis quitar este ul-->
+                                          <ul class="list-unstyled d-md-flex mt-3">
+                                             <!-- quitar li si no hay desayuno gratis  -->
+                                             <li class="align-items-center bg-blue border border-blue d-flex mb-2 mb-md-0 px-3 py-1 rounded-xs text-lh-1 z-index-2">
+                                                <span class="font-weight-normal font-size-14 text-white">Desayuno
+                                                   incluido</span>
+                                             </li>
+                                             <!-- quitar li si no hay cancelación gratis  -->
+                                             <li class="align-items-center border border-blue d-flex mb-2 mb-md-0 ml-md-n1 px-3 py-1 rounded-xs text-lh-1">
+                                                <span class="font-size-14 font-weight-normal text-blue">Cancelación
+                                                   gratis</span>
+                                             </li>
+                                          </ul>
+                                          <!-- End ul de desayuno -->
+                                          <ul class="list-unstyled d-md-flex mt-3 list-amenities">
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-person-swimming"></i> <span class="pl-1 pr-3">Piscina</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-wifi"></i> <span class="pl-1 pr-3">WiFi
+                                                   Gratis</span>
+                                             </li>
+                                             <li class="d-flex font-size-14 font-weight-normal py-1 text-lh-1">
+                                                <i class="fa-solid fa-bed"></i> <span class="pl-1 pr-3">Cama King</span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="my-xl-1">
+                                          <div class="align-items-center d-flex mt-3">
+                                             <span class="badge badge-primary rounded-xs font-size-14 p-2 mr-2 mb-0">4.6
+                                                /5 </span>
+                                             <span class="font-size-14 text-gray-1">(1,186 Reseñas)</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>                                 
+                                 <div class="align-self-center border-top border-xl-top-0 col col-wd-3gdot5 col-xl-3">                                    
+                                    <div class="border-xl-left flex-wrap justify-content-xl-end pl-3 pr-3 text-xl-right">
+                                       <!-- END Cambio-->
+                                       <div class="">
+                                          <div class="mb-0">
+                                             <div class="mb-2">
+                                                <span class="font-weight-bold font-size-20 ml-1">$350.00</span>
+                                                <span class="font-size-14 text-gray-1"> / Noche</span>
+                                             </div>
+                                             <!-- CAMBIO: clases del a -->
+                                             <a href="#" class="align-items-center btn btn-primary d-flex height-51 justify-content-center mb-1 mt-3 rounded transition-3d-hover">Reservar</a>
+                                             <!-- END Cambio-->
+                                             <button type="button" class="btn text-blue-dark-1"><i class="fa-solid fa-table-columns"></i>
+                                                Comparar</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li> 
+                        <li class="bg-white card mb-5 overflow-hidden shadow-soft">
                            <div class="product-item_outer w-100">
                               <div class="row">
                                  <div class="col-md-5 col-xl-4">
@@ -1039,7 +1437,7 @@
      </div>
    </main>
    <!-- ========== END MAIN CONTENT ========== -->
-
+<!--
    <div class="d-inline-block bg-main-light login-cta pulse-animation px-3 py-3">
       <a href="" class="text-blue-dark-1">
          <i class="fa-solid fa-user d-none d-md-block"></i>
@@ -1047,7 +1445,7 @@
       </a>
    </div>
 
-   <!-- CTA bar Comparar -->
+  
    <div class="compare-div">
       <div class="container">
          <div class="row d-block d-xl-flex align-items-md-center">
@@ -1062,7 +1460,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
 
 
 
@@ -1288,112 +1686,110 @@
 
 
    <!-- ========== FOOTER ========== -->
-   <footer class="footer mt-4">
-      <div class="border-top space-bottom-2 space-top-2">
-         <div class="container">
-            <div class="row justify-content-xl-between">
-               <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
-                  <!-- Contacts -->
-                  <div class="d-md-flex d-lg-block">
-                     <div class="mb-5 mr-md-7 mr-lg-0">
-                        <a href="tel:(888)-1234-56789">
-                           <div class="d-block align-items-center">
-                              <div class="mr-4 footer-logo">
-                                 <a class="" href="index.html" aria-label="TripSeguro">
-                                    <img src="assets/img/logo_color.png" alt="">
-                                 </a>
+   <footer class="footer pt-4">
+      <div class="space-bottom-2 space-top-1">
+          <div class="container">
+              <div class="row justify-content-xl-between">
+                  <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+                      <!-- Contacts -->
+                      <div class="d-md-flex d-lg-block">
+                          <div class="mb-5 mr-md-7 mr-lg-0">
+                              <a href="tel:(888)-1234-56789">
+                                  <div class="d-block align-items-center">
+                                      <div class="mr-4 footer-logo">
+                                          <a class="" href="index.html" aria-label="TripSeguro">
+                                              <img src="assets/img/logo_footer.png" alt="">
+                                          </a>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="ml-md-6 ml-lg-0">
+                              <div class="mb-4">
+                                  <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Siguenos</h4>
                               </div>
-                           </div>
-                        </a>
-                     </div>
-                     <div class="ml-md-6 ml-lg-0">
-                        <div class="mb-4">
-                           <h4 class="h6 font-weight-bold mb-2 font-size-17">Siguenos</h4>
-                        </div>
-                        <ul class="list-inline mb-0">
-                           <li class="list-inline-item mr-2">
-                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                 <span class="fab fa-facebook-f btn-icon_inner"></span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item mr-2">
-                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                 <span class="fab fa-twitter  btn-icon_inner"></span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item mr-2">
-                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                 <span class="fab fa-instagram btn-icon_inner"></span>
-                              </a>
-                           </li>
-                           <li class="list-inline-item mr-2">
-                              <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                 <span class="fab fa-linkedin-in btn-icon_inner"></span>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
+                              <ul class="list-inline mb-0">
+                                  <li class="list-inline-item mr-2">
+                                      <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                          <span class="fab fa-facebook-f btn-icon_inner"></span>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item mr-2">
+                                      <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                          <span class="fab fa-twitter  btn-icon_inner"></span>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item mr-2">
+                                      <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                          <span class="fab fa-instagram btn-icon_inner"></span>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item mr-2">
+                                      <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                          <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- End Contacts -->
                   </div>
-                  <!-- End Contacts -->
-               </div>
-               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
-                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Sobre Nosotros</h4>
-                  <!-- List Group -->
-                  <ul class="list-group list-group-flush list-group-borderless mb-0">
-                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">¿Quienes
-                           Somos?</a></li>
-                     <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Contácto</a></li>
-                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Términos de uso</a></li>
-                     <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Póliticas de privacidad</a></li>
-                  </ul>
-                  <!-- End List Group -->
-               </div>
-               <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
-                  <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Contactanos</h4>
-                  <!-- List Group -->
-                  <ul class="list-group list-group-flush list-group-borderless mb-0">
-                     <li>
-                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">info@tripseguro.com</a>
-                     </li>
-                     <li>
-                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">+000 0000 000</a>
-                     </li>
-                     <li>
-                        <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Panamá</a>
-                     </li>
-                  </ul>
-                  <!-- End List Group -->
-               </div>
-               <div class="col-12 col-md-6 col-lg col-xl-3dot1">
-                  <div class="mb-4 mb-xl-2">
-                     <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Suscribete a nuestro Newsletter</h4>
-                     <p class="m-0 text-gray-1">Recibe ofertar y noticias para tus proximas vacaciones</p>
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+                      <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Sobre Nosotros</h4>
+                      <!-- List Group -->
+                      <ul class="list-group list-group-flush list-group-borderless mb-0">
+                          <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">¿Quienes Somos?</a></li>
+                          <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Contáctanos</a></li>
+                          <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Términos de uso</a></li>
+                          <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Póliticas de privacidad</a></li>
+                      </ul>
+                      <!-- End List Group -->
                   </div>
-                  <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
-                     <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
-                     <div class="input-group">
-                        <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
-                        <div class="input-group-append ml-3">
-                           <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
+                      <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Contáctanos</h4>
+                      <!-- List Group -->
+                      <ul class="list-group list-group-flush list-group-borderless mb-0">
+                          <li class="pb-2">
+                              <a class="text-decoration-on-hover text-white" href="#">info@tripseguro.com</a>
+                          </li>
+                          <li class="pb-2">
+                              <a class="text-decoration-on-hover text-white" href="#">+000 0000 000</a>
+                          </li>
+                          <li class="pb-2">
+                              <a class="text-decoration-on-hover text-white" href="#">Panamá</a>
+                          </li>
+                      </ul>
+                      <!-- End List Group -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg col-xl-3dot1">
+                      <div class="mb-4 mb-xl-2">
+                          <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Suscribete a nuestro Newsletter</h4>
+                          <p class="m-0 text-white">Recibe ofertar y noticias para tus proximas vacaciones</p>
+                      </div>
+                      <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
+                          <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
+                          <div class="input-group">
+                              <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                              <div class="input-group-append ml-3">
+                                  <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
       </div>
       <div class="space-1 border-top">
-
-         <div class="container">
-            <div class="d-md-block justify-content-between align-items-center">
-               <!-- Copyright -->
-               <p class="mb-3 mb-lg-0 text-gray-1 mb-3 mb-lg-0 text-center text-gray-1">© 2022 TripSeguro. All rights
-                  reserved</p>
-               <!-- End Copyright -->
-            </div>
-         </div>
+          <div class="container">
+              <div class="d-md-block justify-content-between align-items-center">
+                  <!-- Copyright -->
+                  <p class="mb-3 mb-lg-0 mb-3 mb-lg-0 text-center text-white">© 2022 TripSeguro. All rights reserved</p>
+                  <!-- End Copyright -->
+              </div>
+          </div>
       </div>
-   </footer>
+  </footer>
    <!-- ========== End FOOTER ========== -->
    <!-- Page Preloader -->
    <!-- <div id="jsPreloader" class="page-preloader">
