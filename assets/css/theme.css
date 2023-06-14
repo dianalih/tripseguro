@@ -38502,7 +38502,7 @@ background: linear-gradient(140deg, rgba(243,74,171,1) 0%, rgba(109,30,221,1) 28
   background: rgb(235 231 251 / 50%);
 }
 .bg-tripseguro-body {
-  background: rgb(235 231 251 / 10%);
+  background: rgb(205 200 226 / 15%);
 }
 .after-before-gradient {
   overflow: hidden;
@@ -38575,8 +38575,29 @@ z-index: -1;
     display: block;
     z-index: -1;
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: contain;
     opacity: 0.3;
+  background-image: url(../img/maleta.svg);
+}
+.after-before-maleta2 {
+  position: relative;
+  overflow: hidden;
+}
+.after-before-maleta2::after {
+  transform: rotate(-15deg);
+  content: "";
+  width: 35%;
+  height: 75%;
+  left: -5%;
+  bottom: -1%;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  opacity: 0.3;
   background-image: url(../img/maleta.svg);
 }
 
@@ -43629,4 +43650,18 @@ input[type=number] {
 
 .insurance-table tr {
   border-bottom: 1px solid #e7eaf3;
+}
+
+.tour-carousel .transition-3d-hover button {
+  transition: all 0.5s ease;
+  border: 0;
+  background: linear-gradient(140deg, rgba(0,0,66,1) 50%, rgba(109,30,221,1) 100%);
+  background-size: 300%;
+  background-position: 0;
+  /*background: red;*/
+}
+
+.tour-carousel .transition-3d-hover:hover button {
+  background-position: right
+  /*background: blue;*/
 }
