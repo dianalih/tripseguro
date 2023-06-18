@@ -33171,7 +33171,7 @@ label.btn {
 }
 
 .footer h4 {
-  color: #8a3ff3 !important;
+  color: #43c5db !important;
 }
 
 /* Pill */
@@ -33654,6 +33654,23 @@ label.btn {
 
 .shopping-cart .media-body span {
   line-height: 1;
+}
+.cart-products {
+  position: absolute;
+    background: #000042;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 100%;
+    top: 10px;
+    right: -10px;
 }
 
 .card-img {
@@ -38493,7 +38510,7 @@ background-repeat: no-repeat;
 
 .gradient-tripseguro {
   background: rgb(243,74,171);
-background: linear-gradient(140deg, rgba(243,74,171,1) 0%, rgba(109,30,221,1) 28%, rgba(131,230,255,1) 93%);
+background: linear-gradient(140deg, rgba(109,30,221,1) 28%, rgba(131,230,255,1) 93%);
 }
 .gradient-tripseguro-op {
   background: linear-gradient(180deg,#e8eefd,#83e6ff14);
@@ -43455,12 +43472,6 @@ li.select2-results__option span i {
     padding-left: 25px !important;
     padding-right: 25px !important;
   }
-  .login-cta {    
-    border-radius: 15px !important;
-    font-size: 15px;
-    right: 5px !important;
-    border: 2px solid #6d1edd;
-}
 }
 
 @media (min-width: 1200px) {
@@ -43469,32 +43480,42 @@ li.select2-results__option span i {
     margin-bottom: 120px;
   }
 }
-.login-cta {
-  transition: all 0.5s ease;
-    animation: pulse 1s infinite;
-    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-    position: fixed;
-    z-index: 9999;
-    display: block !important;
-    bottom: 11px;
-    right: 85px;
-    border-radius: 50px 15px 15px 50px;
-}
-.login-cta i {
+
+.button-cta {
   background: #6d1edd;
-    padding: 20px 21px !important;
-    position: absolute;
-    border-radius: 100%;
-    color: #fff;
-    top: 0;
-    left: -8px;
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 56px;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  bottom: 11px;
+  right: 11px;
+  position: fixed;
+  z-index: 9999;
+  animation: pulse 1s infinite;
+    box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
-.login-cta:hover  {
-background-color: #6d1edd !important;
+.button-cta  i {
+  font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    margin: 0 11px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
 }
-.login-cta:hover a {
+.button-cta .text {
+  white-space: nowrap;
+  padding-right: 15px;
+}
+.button-cta:hover {
+  max-width: 380px;
   color: #fff !important;
-  }
+}
 
   @keyframes pulse {
     0% {
@@ -43652,16 +43673,19 @@ input[type=number] {
   border-bottom: 1px solid #e7eaf3;
 }
 
+.tour-carousel .js-slide .card-body {
+  padding-bottom: 90px !important;
+}
 .tour-carousel .transition-3d-hover button {
   transition: all 0.5s ease;
-  border: 0;
-  background: linear-gradient(140deg, rgba(0,0,66,1) 50%, rgba(109,30,221,1) 100%);
-  background-size: 300%;
-  background-position: 0;
-  /*background: red;*/
 }
 
 .tour-carousel .transition-3d-hover:hover button {
-  background-position: right
-  /*background: blue;*/
+  background:  rgba(0,0,66,1);
+  color: #fff;
+  
+}
+.tour-cta {
+  bottom: 16px;
+  position: absolute;
 }
