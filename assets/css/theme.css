@@ -40930,10 +40930,6 @@ z-index: -1;
   border-radius: 5px !important;
 }
 
-.border-bottom {
-  border-bottom: 1px solid #ebf0f7;
-}
-
 @media (min-width: 576px) {
   .border-bottom-sm {
     border-bottom: 1px solid #ebf0f7;

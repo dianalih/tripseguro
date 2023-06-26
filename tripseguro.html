@@ -159,10 +159,55 @@
 
                     <!-- Shopping Cart -->
                     <div class="pl-2 pl-md-4 ml-auto shopping-cart">
-                        <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                        <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="true" data-unfold-event="click" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
                             <span class="font-size-25 text-primary-max-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
                             <span class="cart-products">3</span>
                         </a>
+                        <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right p-0 mt-0 w-max-sm-100 u-unfold--css-animation font-size-16" aria-labelledby="shoppingCartDropdownInvoker" style="width: fit-content; animation-duration: 300ms; right: 0px;">
+                            <div class="card border-0">
+                                <!-- Body -->
+                                <div class="card-body p-0">
+                                    <div class="px-2 px-md-3 py-3 border-bottom border-color-8">
+                                        <div class="media">                                            
+                                            <div class="media-body position-relative pl-md-1">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <span class="d-block text-dark font-weight-bold">Hyatt New York</span>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 px-md-3 py-3 border-bottom border-color-8">
+                                        <div class="media">                                           
+                                            <div class="media-body position-relative pl-md-1">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <span class="d-block text-dark font-weight-bold">Seguro basico</span>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="px-2 px-md-3 py-3 border-bottom border-color-8">
+                                        <div class="media">                                           
+                                            <div class="media-body position-relative pl-md-1">
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <span class="d-block font-weight-semi-bold text-blue-1">Subtotal: $690.00</span>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Body -->
+
+                                <!-- Footer -->
+                                <div class="card-footer border-0 px-2 px-md-3 py-3">                                    
+                                    <div class="d-md-flex button-inline-group-md mb-1">
+                                        <a class="btn btn-block btn-gray-1 btn-sm font-weight-bold rounded-xs transition-3d-hover" href="#">
+                                            Ir al carrito
+                                        </a>                                       
+                                    </div>
+                                </div>
+                                <!-- End Footer -->
+                            </div>
+                        </div>
                     </div>
                     <!-- End Shopping Cart -->
                 </nav>
@@ -177,7 +222,7 @@
         <!-- ========== HERO ========== -->
         <div class="bg-img-hero main-hero pb-10 position-relative space-top-4 text-center z-index-2">
             <video id="background-video" class="background-video" autoplay loop muted poster="assets/img/video-hero.mp4">
-                <source src="assets/img/video-hero.mp4" type="video/mp4">
+                <source src="assets/img/video2.mp4" type="video/mp4">
             </video>
             <div class="container">
 
@@ -981,231 +1026,6 @@
             </div>
         </div>
         <!-- End Icon Block v1 -->
-
-        <!-- Product Cards -->
-        <div class="after-before-gradient position-relative product-card-block product-card-v4">
-            <div class="container space-1">
-                <div class="text-center pb-3 mt-3 mb-3 mx-auto">
-                    <h2 class="text-black font-size-30 font-weight-bold mb-0">Tours</h2>
-                    <p class="font-size-20 font-weight-normal text-black border-title">Lo tenemos todo listo</p>
-                </div>
-                <div class="row row-eq-height pb-6">
-                    <div class="col-md-12 col-lg-5 col-xl-6">
-                        <div class="mb-5 mb-lg-0 h-100 bg-light rounded-top">
-                            <img class="img-fluid w-100 rounded-top" src="assets/img/630x450/img1.jpg" alt="Image-Description">
-                            <div class="bg-light p-4 p-md-5 px-xl-8 pt-xl-5 pb-xl-7 rounded-bottom">
-                                <h6 class="font-size-50 font-size-xs-30 font-weight-bold mb-1 text-blue">New York</h6>
-                                <p class="text-lh-lg text-dark-2 pr-xl-14 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                                <div class="mb-0">
-                                    <span class="font-weight-bold">10</span>
-                                    <span class="mr-1 font-size-14 text-gray-1">Días</span>
-                                    <span class="font-weight-bold">9</span>
-                                    <span class="font-size-14 text-gray-1">Noches</span>
-                                </div>
-                                <div class="mt-2 mb-3">
-                                    <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Pasajes de avion</span>
-                                    <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Hoteles</span>
-                                    <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Transporte</span>
-                                </div>
-                                <a href="#" class="btn btn-outline-dark-2 rounded height-51 width-223 transition-3d-hover d-flex align-items-center justify-content-center border-width-2 mb-1">Explorar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-7 col-xl-6">
-                        <div class="row">
-                            <div class="col-md-6">
-
-
-                                <div class="mb-3 mb-lg-2">
-                                    <div class="h-100">
-                                        <div class="position-relative">
-                                            <a href="#" class="d-block gradient-overlay-half-bg-gradient-v6">
-                                                <img class="img-fluid rounded-xs w-100" src="assets/img/630x350/img1.jpg" alt="Image-Description">
-                                            </a>
-                                            <div class="position-absolute top-0 right-0 pt-3 pr-3">
-                                                <button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
-                                                    <span class=""><i class="fa-regular fa-heart"></i></span>
-                                                </button>
-                                            </div>
-                                            <div class="position-absolute bottom-0 left-0 right-0">
-                                                <div class="px-4 pb-3">
-                                                    <a href="#" class="d-block">
-                                                        <div class="d-flex align-items-center font-size-14 text-white">
-                                                            <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Londres, Reino Unido
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light px-3 py-3">
-                                            <a href="#" class="card-title font-size-17 font-weight-medium text-dark">Descubre los impresindibles de Londres</a>
-                                            <div class="mb-0">
-                                                <span class="font-weight-bold">10</span>
-                                                <span class="mr-1 font-size-14 text-gray-1">Días</span>
-                                                <span class="font-weight-bold">9</span>
-                                                <span class="font-size-14 text-gray-1">Noches</span>
-                                            </div>
-                                            <div class="mt-2 mb-3">
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Pasajes de avion</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Hoteles</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Transporte</span>
-                                            </div>
-                                            <div class="mb-0">
-                                                <span class="mr-1 font-size-14 text-gray-1">Desde</span>
-                                                <span class="font-weight-bold">$899.00</span>
-                                            </div>
-                                            <div class="mt-3">
-                                                <button type="submit" class="btn btn-outline-dark-2 rounded height-51 width-223 transition-3d-hover d-flex align-items-center justify-content-center border-width-2 mb-1">Explorar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="mb-3 mb-lg-2">
-                                    <div class="h-100">
-                                        <div class="position-relative">
-                                            <a href="#" class="d-block gradient-overlay-half-bg-gradient-v6">
-                                                <img class="img-fluid rounded-xs w-100" src="assets/img/630x350/img1.jpg" alt="Image-Description">
-                                            </a>
-                                            <div class="position-absolute top-0 right-0 pt-3 pr-3">
-                                                <button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
-                                                    <span class=""><i class="fa-regular fa-heart"></i></span>
-                                                </button>
-                                            </div>
-                                            <div class="position-absolute bottom-0 left-0 right-0">
-                                                <div class="px-4 pb-3">
-                                                    <a href="#" class="d-block">
-                                                        <div class="d-flex align-items-center font-size-14 text-white">
-                                                            <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Londres, Reino Unido
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light px-3 py-3">
-                                            <a href="#" class="card-title font-size-17 font-weight-medium text-dark">Descubre los impresindibles de Londres</a>
-                                            <div class="mb-0">
-                                                <span class="font-weight-bold">10</span>
-                                                <span class="mr-1 font-size-14 text-gray-1">Días</span>
-                                                <span class="font-weight-bold">9</span>
-                                                <span class="font-size-14 text-gray-1">Noches</span>
-                                            </div>
-                                            <div class="mt-2 mb-3">
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Pasajes de avion</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Hoteles</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Transporte</span>
-                                            </div>
-                                            <div class="mb-0">
-                                                <span class="mr-1 font-size-14 text-gray-1">Desde</span>
-                                                <span class="font-weight-bold">$899.00</span>
-                                            </div>
-                                            <div class="mt-3">
-                                                <button type="submit" class="btn btn-outline-dark-2 rounded height-51 width-223 transition-3d-hover d-flex align-items-center justify-content-center border-width-2 mb-1">Explorar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="h-100">
-                                        <div class="position-relative">
-                                            <a href="#" class="d-block gradient-overlay-half-bg-gradient-v6">
-                                                <img class="img-fluid rounded-xs w-100" src="assets/img/630x350/img1.jpg" alt="Image-Description">
-                                            </a>
-                                            <div class="position-absolute top-0 right-0 pt-3 pr-3">
-                                                <button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
-                                                    <span class=""><i class="fa-regular fa-heart"></i></span>
-                                                </button>
-                                            </div>
-                                            <div class="position-absolute bottom-0 left-0 right-0">
-                                                <div class="px-4 pb-3">
-                                                    <a href="#" class="d-block">
-                                                        <div class="d-flex align-items-center font-size-14 text-white">
-                                                            <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Londres, Reino Unido
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light px-3 py-3">
-                                            <a href="#" class="card-title font-size-17 font-weight-medium text-dark">Descubre los impresindibles de Londres</a>
-                                            <div class="mb-0">
-                                                <span class="font-weight-bold">10</span>
-                                                <span class="mr-1 font-size-14 text-gray-1">Días</span>
-                                                <span class="font-weight-bold">9</span>
-                                                <span class="font-size-14 text-gray-1">Noches</span>
-                                            </div>
-                                            <div class="mt-2 mb-3">
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Pasajes de avion</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Hoteles</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Transporte</span>
-                                            </div>
-                                            <div class="mb-0">
-                                                <span class="mr-1 font-size-14 text-gray-1">Desde</span>
-                                                <span class="font-weight-bold">$899.00</span>
-                                            </div>
-                                            <div class="mt-3">
-                                                <button type="submit" class="btn btn-outline-dark-2 rounded height-51 width-223 transition-3d-hover d-flex align-items-center justify-content-center border-width-2 mb-1">Explorar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-0">
-                                    <div class="h-100">
-                                        <div class="position-relative">
-                                            <a href="#" class="d-block gradient-overlay-half-bg-gradient-v6">
-                                                <img class="img-fluid rounded-xs w-100" src="assets/img/630x350/img1.jpg" alt="Image-Description">
-                                            </a>
-                                            <div class="position-absolute top-0 right-0 pt-3 pr-3">
-                                                <button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Guardar">
-                                                    <span class=""><i class="fa-regular fa-heart"></i></span>
-                                                </button>
-                                            </div>
-                                            <div class="position-absolute bottom-0 left-0 right-0">
-                                                <div class="px-4 pb-3">
-                                                    <a href="#" class="d-block">
-                                                        <div class="d-flex align-items-center font-size-14 text-white">
-                                                            <i class="icon fa-solid fa-location-dot mr-2 font-size-20"></i> Londres, Reino Unido
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-light px-3 py-3">
-                                            <a href="#" class="card-title font-size-17 font-weight-medium text-dark">Descubre los impresindibles de Londres</a>
-                                            <div class="mb-0">
-                                                <span class="font-weight-bold">10</span>
-                                                <span class="mr-1 font-size-14 text-gray-1">Días</span>
-                                                <span class="font-weight-bold">9</span>
-                                                <span class="font-size-14 text-gray-1">Noches</span>
-                                            </div>
-                                            <div class="mt-2 mb-3">
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Pasajes de avion</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Hoteles</span>
-                                                <span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">Transporte</span>
-                                            </div>
-                                            <div class="mb-0">
-                                                <span class="mr-1 font-size-14 text-gray-1">Desde</span>
-                                                <span class="font-weight-bold">$899.00</span>
-                                            </div>
-                                            <div class="mt-3">
-                                                <button type="submit" class="btn btn-outline-dark-2 rounded height-51 width-223 transition-3d-hover d-flex align-items-center justify-content-center border-width-2 mb-1">Explorar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Product Cards -->
 
         <!--Banner v3-->
         <div class="banner-block banner-v3 dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll" data-options='{direction: "normal"}'>

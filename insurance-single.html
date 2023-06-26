@@ -14,8 +14,8 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Rubik:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Rubik:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
@@ -33,10 +33,10 @@
 
 <body>
     <!-- ========== HEADER ========== -->
-    <header id="header" class="u-header u-header--white-nav-links-xl bg-white u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="300" data-header-fix-effect="slide">
-        <div class="u-header_section u-header_shadow-on-show-hide py-4 py-xl-0">
+    <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-blue-dark u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="300" data-header-fix-effect="slide">
+        <div class="u-header_section u-header_shadow-on-show-hide py-0 ">
             <!-- Topbar -->
-            <div class="bg-violet u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
+            <div class="border-bottom-1 u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
                 <div class="container">
                     <div class="d-flex align-items-center">
                         <div class="position-relative u-header_hide-content">
@@ -68,16 +68,24 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="position-relative px-3 u-header_topbar-divider">
-                                <a href="#" class="d-flex align-items-center text-white py-2">
-                                    <i class="fa-solid fa-user-plus mr-2 ml-1"></i>
+                            <div class="d-sm-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                                <a class="d-flex align-items-center text-white py-3" href=""><i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
                                     <span class="d-inline-block font-size-14 mr-1">Login</span>
                                 </a>
+                            </div>
+
+                            <div class="d-sm-block d-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                                <a id="signUpDropdownInvoker" href="javascript:;" class="d-flex align-items-center text-white py-3" aria-controls="signUpDropdown" aria-haspopup="true" aria-expanded="true" data-unfold-event="click" data-unfold-target="#signUpDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                    <i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
+                                    <span class="d-inline-block font-size-14 mr-1">Login</span>
+                                </a>
+                                <div id="signUpDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right py-0 mt-0" aria-labelledby="signUpDropdownInvoker" style="min-width: 500px;">
+                                    <!-- PONE AQUI TODO LOS FORMS DEL DROPDOWN DE LOGIN-->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- End Topbar -->
             <div id="logoAndNav" class="container">
@@ -85,22 +93,19 @@
                 <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
                     <!-- Logo -->
                     <a class="navbar-brand u-header_navbar-brand-default u-header_navbar-brand-center u-header_navbar-brand-text-white" href="index.html" aria-label="TripSeguro">
-                        <img src="assets/img/logo_color.png" alt="">
+                        <img src="assets/img/logo_footer.png" alt="">
                     </a>
                     <!-- End Logo -->
-
                     <!-- Handheld Logo -->
                     <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-collapsed" href="index.html" aria-label="TripSeguro">
                         <img src="assets/img/logo_color.png" alt="">
                     </a>
                     <!-- End Handheld Logo -->
-
                     <!-- Scroll Logo -->
                     <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-on-scroll" href="index.html" aria-label="TripSeguro">
                         <img src="assets/img/logo_color.png" alt="">
                     </a>
                     <!-- End Scroll Logo -->
-
                     <!-- Responsive Toggle Button -->
                     <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
                         <span id="hamburgerTrigger" class="u-hamburger_box">
@@ -108,7 +113,6 @@
                         </span>
                     </button>
                     <!-- End Responsive Toggle Button -->
-
                     <!-- Navigation -->
                     <div id="navBar" class="navbar-collapse u-header_navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
                         <ul class="navbar-nav u-header_navbar-nav">
@@ -117,7 +121,6 @@
                                 <a id="homeMenu" class="nav-link u-header_nav-link  u-header_nav-link-border" href="#">Home</a>
                             </li>
                             <!-- End Home -->
-
                             <!-- Hoteles -->
                             <li class="nav-item u-header_nav-item">
                                 <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Hoteles</a>
@@ -140,7 +143,8 @@
                             <!-- End Autos  -->
                             <!-- Autos -->
                             <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre Nosotros</a>
+                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre
+                                    Nosotros</a>
                             </li>
                             <!-- End Autos  -->
                             <!-- Autos -->
@@ -151,77 +155,12 @@
                         </ul>
                     </div>
                     <!-- End Navigation -->
-
                     <!-- Shopping Cart -->
                     <div class="pl-2 pl-md-4 ml-auto shopping-cart">
                         <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
                             <span class="font-size-25 text-primary-max-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="cart-products">3</span>
                         </a>
-
-                        <div id="shoppingCartDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right p-0 mt-0 w-max-sm-100 u-unfold--css-animation font-size-16" aria-labelledby="shoppingCartDropdownInvoker" style="width: 500px; animation-duration: 300ms; right: 0px;">
-                            <div class="card">
-                                <!-- Header -->
-                                <div class="card-header border-color-8 py-3 px-5">
-                                    <span class="font-weight-semi-bold">Tu carrito</span>
-                                </div>
-                                <!-- End Header -->
-
-                                <!-- Body -->
-                                <div class="card-body p-0">
-                                    <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
-                                        <div class="media p-2 p-md-3">
-                                            <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
-                                                <img class="img-fluid rounded-pill" src="assets/img/80x80/img1.jpg" alt="Image Description">
-                                            </div>
-                                            <div class="media-body position-relative pl-md-1">
-                                                <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
-                                                    <span class="d-block text-dark font-weight-bold">Hyatt New
-                                                        York</span>
-                                                    <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
-                                                        <i class="fas fa-trash"></i>
-                                                    </button>
-                                                </div>
-                                                <span class="d-block text-gray-1">$590.00 </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="px-2 px-md-3 py-2 py-md-1 border-bottom border-color-8">
-                                        <div class="media p-2 p-md-3">
-                                            <div class="u-avatar u-lg-avatar-md mr-2 mr-md-3">
-                                                <img class="img-fluid rounded-pill" src="assets/img/80x80/img2.jpg" alt="Image Description">
-                                            </div>
-                                            <div class="media-body position-relative pl-md-1">
-                                                <div class="d-flex justify-content-between align-items-start mb-2 mb-md-3">
-                                                    <span class="d-block text-dark font-weight-bold">Seguro
-                                                        basico</span>
-                                                    <button type="button" class="close close-rounded position-md-absolute right-0 ml-2" aria-label="Close">
-                                                        <i class="fas fa-trash"></i>
-                                                    </button>
-                                                </div>
-                                                <span class="d-block text-gray-1">$100.00 </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Body -->
-
-                                <!-- Footer -->
-                                <div class="card-footer border-0 p-3 px-md-5 py-md-4">
-                                    <div class="mb-4 pb-md-1">
-                                        <span class="d-block font-weight-semi-bold">Subtotal: $690.00</span>
-                                    </div>
-                                    <div class="d-md-flex button-inline-group-md mb-1">
-                                        <a class="btn btn-block btn-md btn-gray-1 rounded-xs font-weight-bold transition-3d-hover" href="#">
-                                            Ver carrito
-                                        </a>
-                                        <a class="btn btn-block btn-md btn-blue-1 rounded-xs font-weight-bold transition-3d-hover mt-md-0 ml-md-5" href="#">
-                                            Pagar ahora
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- End Footer -->
-                            </div>
-                        </div>
                     </div>
                     <!-- End Shopping Cart -->
                 </nav>
@@ -232,148 +171,198 @@
     <!-- ========== End HEADER ========== -->
 
     <!-- ========== MAIN CONTENT ========== -->
-    <main id="content" class="border-top space-top-1">
+    <main id="content" class="border-top space-top-1 bg-tripseguro-body">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-7 col-xl-8">
-                    <div class="border-bottom">
-                        <div class="card border-color-7 mb-5 overflow-hidden">
-                            <div class="product-item_outer w-100">
-                                <div class="w-100 position-relative p-2 p-md-4">
-                                    <h3 class="font-size-20 font-weight-bolder mb-0 text-lh-1 py-2 text-blue-dark-1">Plan Estandar</h3>
-                                    <h4 class="font-size-18 font-weight-bold mb-0 text-lh-1 pt-1 pb-3 text-blue-dark-1">Cobertura hasta <span class="text-blue-1"> US$ 50.000,00 USD</span></h4>
-                                    <div class="card-body py-0 px-0">
-                                        <div class="mb-2">
-                                            <span class="font-weight-bolder text-green ">$20.00</span>
-                                            <span class="font-size-14 text-gray-1"> / Persona</span>
-                                        </div>
+
+                    <h2 class="font-size-27 font-size-xs-20 font-weight-bold mb-3 pl-3 text-blue-dark-1">Asistencia para tu viaje</h2>
+
+                    <div class="card border-color-7 mb-5 overflow-hidden">
+                        <div class="product-item_outer w-100">
+                            <div class="w-100 position-relative p-2 p-md-4">
+                                <h3 class="font-size-20 font-weight-bolder mb-0 text-lh-1 py-2 text-blue-dark-1">Plan Estandar</h3>
+                                <h4 class="font-size-18 font-weight-bold mb-0 text-lh-1 pt-1 pb-3 text-blue-dark-1">Cobertura hasta <span class="text-blue-1"> US$ 50.000,00 USD</span></h4>
+                                <div class="card-body py-0 px-0">
+                                    <div class="mb-2">
+                                        <span class="font-weight-bolder text-green ">$20.00</span>
+                                        <span class="font-size-14 text-gray-1"> / Persona</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="card border-color-7 mb-5 overflow-hidden pb-md-4 pb-2">
                         <div id="insuranceAccordion">
-                            <!-- Card -->
-                            <div class="card border-0 mb-4 pb-1">
-                              <div class="card-header border-bottom-0 p-0" id="basicsHeadingOne">
-                                <h5 class="mb-0">
-                                  <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0"
-                                    data-toggle="collapse" data-target="#insuranceCollapseOne" aria-expanded="true" aria-controls="insuranceCollapseOne">
-                                    <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
-                                      <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
-                                      <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
-                                    </div>                          
-                                    <h6 class="font-weight-bold text-gray-3 mb-0">Beneficio Medico</h6>
-                                  </button>
-                                </h5>
-                              </div>
-                              <div id="insuranceCollapseOne" class="collapse show" aria-labelledby="basicsHeadingOne" data-parent="#insuranceAccordion">
-                                <div class="card-body  pt-0">
-                                    <table class="mb-0 table insurance-table mt-4">            
-                                        <tbody>
-                                        <tr>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p></td>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                        </tr>         
-                                        <tr>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p></td>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">USD $150,000</p></td>
-                                        </tr>         
-                                        <tr>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p></td>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                        </tr>         
-                                        <tr>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p></td>
-                                            <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                        </tr>         
-                                    </tbody></table>
+                            <div class="pb-md-0 position-relative pt-2 pt-md-4 px-2 px-md-4 w-100">
+                                <!-- Card -->
+                                <div class="card-header border-bottom-0 p-0" id="basicsHeadingOne">
+                                    <h5 class="mb-0">
+                                        <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0" data-toggle="collapse" data-target="#insuranceCollapseOne" aria-expanded="true" aria-controls="insuranceCollapseOne">
+                                            <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
+                                                <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
+                                                <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
+                                            </div>
+                                            <h6 class="font-weight-bold text-gray-3 mb-0">Beneficio Medico</h6>
+                                        </button>
+                                    </h5>
                                 </div>
-                              </div>
+                                <div id="insuranceCollapseOne" class="collapse show" aria-labelledby="basicsHeadingOne" data-parent="#insuranceAccordion">
+                                    <div class="card-body  pt-0">
+                                        <table class="mb-0 table insurance-table mt-4">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $150,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                             <!-- End Card -->
                             <!-- Card -->
-                            <div class="card border-0 mb-4 pb-1">
+                            <div class="pb-md-0 position-relative pt-2 pt-md-4 px-2 px-md-4 w-100">
                                 <div class="card-header border-bottom-0 p-0" id="basicsHeadingTwo">
-                                  <h5 class="mb-0">
-                                    <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0"
-                                      data-toggle="collapse" data-target="#insuranceCollapseThree" aria-expanded="false" aria-controls="insuranceCollapseThree">
-                                      <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
-                                        <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
-                                        <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
-                                      </div>                          
-                                      <h6 class="font-weight-bold text-gray-3 mb-0">Repatriacion Y Traslado De Emergencia</h6>
-                                    </button>
-                                  </h5>
+                                    <h5 class="mb-0">
+                                        <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0" data-toggle="collapse" data-target="#insuranceCollapseThree" aria-expanded="false" aria-controls="insuranceCollapseThree">
+                                            <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
+                                                <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
+                                                <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
+                                            </div>
+                                            <h6 class="font-weight-bold text-gray-3 mb-0">Repatriacion Y Traslado De Emergencia</h6>
+                                        </button>
+                                    </h5>
                                 </div>
                                 <div id="insuranceCollapseThree" class="collapse" aria-labelledby="basicsHeadingTwo" data-parent="#insuranceAccordion">
-                                  <div class="card-body  pt-0">
-                                      <table class="mb-0 table insurance-table mt-4">            
-                                          <tbody>
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $150,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                      </tbody></table>
-                                  </div>
+                                    <div class="card-body  pt-0">
+                                        <table class="mb-0 table insurance-table mt-4">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $150,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                              </div>
-                              <!-- End Card -->
-                              <!-- Card -->
-                            <div class="card border-0 mb-4 pb-1">
+                            </div>
+                            <!-- End Card -->
+                            <!-- Card -->
+                            <div class="pb-md-0 position-relative pt-2 pt-md-4 px-2 px-md-4 w-100">
                                 <div class="card-header border-bottom-0 p-0" id="basicsHeadingThree">
-                                  <h5 class="mb-0">
-                                    <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0"
-                                      data-toggle="collapse" data-target="#insuranceCollapseTwo" aria-expanded="false" aria-controls="insuranceCollapseTwo">
-                                      <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
-                                        <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
-                                        <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
-                                      </div>                          
-                                      <h6 class="font-weight-bold text-gray-3 mb-0">Asistencia De Viaje</h6>
-                                    </button>
-                                  </h5>
+                                    <h5 class="mb-0">
+                                        <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0" data-toggle="collapse" data-target="#insuranceCollapseTwo" aria-expanded="false" aria-controls="insuranceCollapseTwo">
+                                            <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
+                                                <figure id="rectangle" class="minus "><i class="fa-solid fa-minus"></i></figure>
+                                                <figure id="plus1" class="plus"><i class="fa-solid fa-plus"></i></figure>
+                                            </div>
+                                            <h6 class="font-weight-bold text-gray-3 mb-0">Asistencia De Viaje</h6>
+                                        </button>
+                                    </h5>
                                 </div>
                                 <div id="insuranceCollapseTwo" class="collapse" aria-labelledby="basicsHeadingThree" data-parent="#insuranceAccordion">
-                                  <div class="card-body  pt-0">
-                                      <table class="mb-0 table insurance-table mt-4">            
-                                          <tbody>
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $150,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                          <tr>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p></td>
-                                              <td><p class="font-size-17 mb-0 text-gray-1">USD $100,000</p></td>
-                                          </tr>         
-                                      </tbody></table>
-                                  </div>
+                                    <div class="card-body  pt-0">
+                                        <table class="mb-0 table insurance-table mt-4">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención médica Accidente</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Atención Médica por Enfermedad</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $150,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Medicina Domiciliaria</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">Asesoría psicológica telefónica</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="font-size-17 mb-0 text-gray-1">USD $100,000</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                              </div>
-                              <!-- End Card -->
-                          
-                          </div>  
-                    </div>                    
+                            </div>
+                            <!-- End Card -->
+
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-5 col-xl-4">
                     <div class="mb-4">
@@ -387,7 +376,7 @@
                                 <div class="p-4">
                                     <div class="border-bottom mb-3 pb-3">
                                         <!-- Fact List -->
-                                        <ul class="list-unstyled font-size-1 mb-0 font-size-16">                                            
+                                        <ul class="list-unstyled font-size-1 mb-0 font-size-16">
                                             <li class="d-flex justify-content-between py-2"> <span class="font-weight-medium">Origen</span> <span class="text-secondary">Nicaragua</span> </li>
                                             <li class="d-flex justify-content-between py-2"> <span class="font-weight-medium">Destino</span> <span class="text-secondary">Panama</span> </li>
                                             <li class="d-flex justify-content-between py-2"> <span class="font-weight-medium">Desde</span> <span class="text-secondary">31 May 2023</span> </li>
@@ -422,209 +411,210 @@
                 </div>
             </div>
             <div class="row">
-<div class="col-12" id="info-pasajeros">
-    <div class="mb-5 bg-white rounded-sm">
-        <div class="pt-5">
-            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
-                Información del pasajero principal
-            </h5>
-            <!-- Contacts Form -->
-            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
-                <div class="row">
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Primer Nombre</label>
-                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
+                <div class="col-12" id="info-pasajeros">
 
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Apellido</label>
-                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">ID o Pasaporte</label>
-                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" placeholder="tuemail@email.com" aria-label="" required="" data-msg="Ingrese un email valido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Teléfono</label>
-                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Fecha de Nacimiento</label>
-                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <div class="w-100"></div>
-                </div>
-            </form>
-            <!-- End Contacts Form -->
-        </div>
-    </div>
-    <div class="bg-white rounded-sm">
-        <div class="pb-5">
-            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
-                Información del pasajero 2
-            </h5>
-            <!-- Contacts Form -->
-            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
-                <div class="row">
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Primer Nombre</label>
-                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
+                    <div class="card border-color-7 mb-5 overflow-hidden">
+                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
+                            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
+                                Información del pasajero principal
+                            </h5>
+                            <!-- Contacts Form -->
+                            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
+                                <div class="row">
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Primer Nombre</label>
+                                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
 
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Apellido</label>
-                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">ID o Pasaporte</label>
-                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Teléfono</label>
-                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 col-md-4 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Fecha de Nacimiento</label>
-                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <div class="w-100"></div>
-                </div>
-            </form>
-            <!-- End Contacts Form -->
-        </div>
-    </div>
-    <div class="">
-        <!-- Checkbox -->
-        <div class="border border-radius-5 js-form-message mb-5 px-2 py-3">
-            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-                <input type="checkbox" class="custom-control-input" id="addHotel" name="addHotel" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success">
-                <label class="custom-control-label text-blue-dark-1 font-size-17" for="addHotel">
-                    <span class="font-weight-bolder text-blue-1">¿Quieres reservar tambien un Hotel?</span> <span>tenemos grandes opciones</span>
-                </label>
-            </div>
-        </div>
-        <!-- End Checkbox -->   
-    </div>
-    <div id="pago" class="mb-5 bg-white rounded-sm">
-        <div class="py-5 border-top">
-            <h5 class="font-size-21 font-weight-bold text-dark mb-4">Información de pago</h5>
-            <!-- Tab Content -->
-            <!-- Payment Form -->
-            <form class="js-validate">
-                <div class="row">
-                    <!-- Input -->
-                    <div class="col-sm-6 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Titular de la tarjeta</label>
-                            <input type="text" class="form-control" name="Cardname" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label">Numero de tarjeta </label>
-                            <input type="number" class="form-control" name="Cardnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <div class="w-100"></div>
-                    <!-- Input -->
-                    <div class="col-sm-6 mb-4">
-                        <div class="row">
-                            <div class="col-sm-6 mb-4 mb-md-0">
-                                <div class="js-form-message">
-                                    <label class="form-label">Mes de expiración </label>
-                                    <input type="number" class="form-control" name="Expirymonth" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">ID o Pasaporte</label>
+                                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" placeholder="tuemail@email.com" aria-label="" required="" data-msg="Ingrese un email valido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Teléfono</label>
+                                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Fecha de Nacimiento</label>
+                                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <div class="w-100"></div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="js-form-message">
-                                    <label class="form-label">Año de Expiración </label>
-                                    <input type="number" class="form-control" name="Expiryyear" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                            </form>
+                            <!-- End Contacts Form -->
+                        </div>
+                    </div>
+                    <div class="card border-color-7 mb-5 overflow-hidden">
+                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
+                            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
+                                Información del pasajero 2
+                            </h5>
+                            <!-- Contacts Form -->
+                            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
+                                <div class="row">
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Primer Nombre</label>
+                                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">ID o Pasaporte</label>
+                                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Teléfono</label>
+                                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 col-md-4 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Fecha de Nacimiento</label>
+                                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <div class="w-100"></div>
                                 </div>
-                            </div>
+                            </form>
+                            <!-- End Contacts Form -->
                         </div>
                     </div>
-                    <!-- End Input -->
-                    <!-- Input -->
-                    <div class="col-sm-6 mb-4">
-                        <div class="js-form-message">
-                            <label class="form-label"> CCV </label>
-                            <input type="number" class="form-control" name="ccvnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                        </div>
-                    </div>
-                    <!-- End Input -->
-                    <div class="w-100"></div>
-                    <div class="col">
+                    <div class="">
                         <!-- Checkbox -->
-                        <div class="js-form-message mb-5">
+                        <div class="border border-radius-5 js-form-message mb-5 px-2 py-3">
                             <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-                                <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success">
-                                <label class="custom-control-label" for="termsCheckbox">
-                                    <small>Para continuar acepta nuestros <a class="link-muted" href="#">Términos y condiciones</a></small>
+                                <input type="checkbox" class="custom-control-input" id="addHotel" name="addHotel" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success">
+                                <label class="custom-control-label text-blue-dark-1 font-size-17" for="addHotel">
+                                    <span class="font-weight-bolder text-blue-1">¿Quieres reservar tambien un Hotel?</span> <span>tenemos grandes opciones</span>
                                 </label>
                             </div>
                         </div>
                         <!-- End Checkbox -->
-                        <a href="javascript:;" data-src="#confirmando" data-speed="700" class="js-fancybox btn btn-primary w-100 rounded-sm transition-3d-hover font-size-16 font-weight-bold py-3" data-ol-has-click-handler=""> Confirmar Pago</a>
+                    </div>
+                    <div id="pago" class="card border-color-7 mb-5 overflow-hidden">
+                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
+                            <h5 class="font-size-21 font-weight-bold text-dark mb-4">Información de pago</h5>
+                            <!-- Tab Content -->
+                            <!-- Payment Form -->
+                            <form class="js-validate">
+                                <div class="row">
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Titular de la tarjeta</label>
+                                            <input type="text" class="form-control" name="Cardname" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label">Numero de tarjeta </label>
+                                            <input type="number" class="form-control" name="Cardnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <div class="w-100"></div>
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-4 mb-md-0">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Mes de expiración </label>
+                                                    <input type="number" class="form-control" name="Expirymonth" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Año de Expiración </label>
+                                                    <input type="number" class="form-control" name="Expiryyear" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <!-- Input -->
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="js-form-message">
+                                            <label class="form-label"> CCV </label>
+                                            <input type="number" class="form-control" name="ccvnumber" placeholder="" aria-label="" required data-msg="Este campo es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                        </div>
+                                    </div>
+                                    <!-- End Input -->
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <!-- Checkbox -->
+                                        <div class="js-form-message mb-5">
+                                            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                                                <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                <label class="custom-control-label" for="termsCheckbox">
+                                                    <small>Para continuar acepta nuestros <a class="link-muted" href="#">Términos y condiciones</a></small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- End Checkbox -->
+                                        <a href="javascript:;" data-src="#confirmando" data-speed="700" class="js-fancybox btn btn-primary w-100 rounded-sm transition-3d-hover font-size-16 font-weight-bold py-3" data-ol-has-click-handler=""> Confirmar Pago</a>
 
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End Payment Form -->
+                            <!-- End Tab Content -->
+                        </div>
                     </div>
                 </div>
-            </form>
-            <!-- End Payment Form -->
-            <!-- End Tab Content -->
-        </div>
-    </div>
-</div>
             </div>
             <!-- Product Cards Ratings With carousel -->
             <div class="product-card-block product-card-v3">
@@ -872,110 +862,112 @@
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
-    <footer class="footer mt-4">
-        <div class="border-top space-bottom-2 space-top-2">
-            <div class="container">
-                <div class="row justify-content-xl-between">
-                    <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
-                        <!-- Contacts -->
-                        <div class="d-md-flex d-lg-block">
-                            <div class="mb-5 mr-md-7 mr-lg-0">
-                                <a href="tel:(888)-1234-56789">
-                                    <div class="d-block align-items-center">
-                                        <div class="mr-4 footer-logo">
-                                            <a class="" href="index.html" aria-label="TripSeguro">
-                                                <img src="assets/img/logo_color.png" alt="">
-                                            </a>
-                                        </div>
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer pt-4">
+    <div class="space-bottom-2 space-top-1">
+        <div class="container">
+            <div class="row justify-content-xl-between">
+                <div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+                    <!-- Contacts -->
+                    <div class="d-md-flex d-lg-block">
+                        <div class="mb-5 mr-md-7 mr-lg-0">
+                            <a href="tel:(888)-1234-56789">
+                                <div class="d-block align-items-center">
+                                    <div class="mr-4 footer-logo">
+                                        <a class="" href="index.html" aria-label="TripSeguro">
+                                            <img src="assets/img/logo_footer.png" alt="">
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="ml-md-6 ml-lg-0">
-                                <div class="mb-4">
-                                    <h4 class="h6 font-weight-bold mb-2 font-size-17">Siguenos</h4>
                                 </div>
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item mr-2">
-                                        <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                            <span class="fab fa-facebook-f btn-icon_inner"></span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mr-2">
-                                        <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                            <span class="fab fa-twitter  btn-icon_inner"></span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mr-2">
-                                        <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                            <span class="fab fa-instagram btn-icon_inner"></span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mr-2">
-                                        <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
-                                            <span class="fab fa-linkedin-in btn-icon_inner"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            </a>
                         </div>
-                        <!-- End Contacts -->
+                        <div class="ml-md-6 ml-lg-0">
+                            <div class="mb-4">
+                                <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Siguenos</h4>
+                            </div>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-2">
+                                    <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                        <span class="fab fa-facebook-f btn-icon_inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-2">
+                                    <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                        <span class="fab fa-twitter  btn-icon_inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-2">
+                                    <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                        <span class="fab fa-instagram btn-icon_inner"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-2">
+                                    <a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+                                        <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
-                        <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Sobre Nosotros</h4>
-                        <!-- List Group -->
-                        <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">¿Quienes Somos?</a></li>
-                            <li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Contácto</a></li>
-                            <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Términos de uso</a></li>
-                            <li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Póliticas de privacidad</a></li>
-                        </ul>
-                        <!-- End List Group -->
-                    </div>
+                    <!-- End Contacts -->
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+                    <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Sobre Nosotros</h4>
+                    <!-- List Group -->
+                    <ul class="list-group list-group-flush list-group-borderless mb-0">
+                        <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">¿Quienes Somos?</a></li>
+                        <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Contáctanos</a></li>
+                        <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Términos de uso</a></li>
+                        <li class="pb-2"><a class="text-decoration-on-hover text-white" href="#">Póliticas de privacidad</a></li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
-                        <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Contactanos</h4>
-                        <!-- List Group -->
-                        <ul class="list-group list-group-flush list-group-borderless mb-0">
-                            <li>
-                                <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">info@tripseguro.com</a>
-                            </li>
-                            <li>
-                                <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">+000 0000 000</a>
-                            </li>
-                            <li>
-                                <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Panamá</a>
-                            </li>
-                        </ul>
-                        <!-- End List Group -->
+                <div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-0">
+                    <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Contáctanos</h4>
+                    <!-- List Group -->
+                    <ul class="list-group list-group-flush list-group-borderless mb-0">
+                        <li class="pb-2">
+                            <a class="text-decoration-on-hover text-white" href="#">info@tripseguro.com</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-decoration-on-hover text-white" href="#">+000 0000 000</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-decoration-on-hover text-white" href="#">Panamá</a>
+                        </li>
+                    </ul>
+                    <!-- End List Group -->
+                </div>
+                <div class="col-12 col-md-6 col-lg col-xl-3dot1">
+                    <div class="mb-4 mb-xl-2">
+                        <h4 class="font-size-18 font-weight-bold mb-2 mb-xl-4 text-blue">Suscribete a nuestro Newsletter</h4>
+                        <p class="m-0 text-white">Recibe ofertar y noticias para tus proximas vacaciones</p>
                     </div>
-                    <div class="col-12 col-md-6 col-lg col-xl-3dot1">
-                        <div class="mb-4 mb-xl-2">
-                            <h4 class="h6 font-weight-bold mb-2 mb-xl-4">Suscribete a nuestro Newsletter</h4>
-                            <p class="m-0 text-gray-1">Recibe ofertar y noticias para tus proximas vacaciones</p>
-                        </div>
-                        <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
-                            <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
-                            <div class="input-group">
-                                <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
-                                <div class="input-group-append ml-3">
-                                    <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
-                                </div>
+                    <form class="js-validate js-focus-state js-form-message" novalidate="novalidate">
+                        <label class="sr-only text-gray-1" for="subscribeSrEmailExample1">Your Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8" name="email" id="subscribeSrEmailExample1" placeholder="Tu Email" aria-label="Your email address" aria-describedby="subscribeButtonExample3" required="" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                            <div class="input-group-append ml-3">
+                                <button class="btn btn-primary border-radius-3 height-54 min-width-112 font-size-14" type="submit" id="subscribeButtonExample3">Enviar</button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="space-1 border-top">
-            <div class="container">
-                <div class="d-md-block justify-content-between align-items-center">
-                    <!-- Copyright -->
-                    <p class="mb-3 mb-lg-0 text-gray-1 mb-3 mb-lg-0 text-center text-gray-1">© 2022 TripSeguro. All rights reserved</p>
-                    <!-- End Copyright -->
-                </div>
+    </div>
+    <div class="space-1 border-top">
+        <div class="container">
+            <div class="d-md-block justify-content-between align-items-center">
+                <!-- Copyright -->
+                <p class="mb-3 mb-lg-0 mb-3 mb-lg-0 text-center text-white">© 2022 TripSeguro. All rights reserved</p>
+                <!-- End Copyright -->
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+ <!-- ========== End FOOTER ========== -->
 
     <!-- Page Preloader -->
     <!-- <div id="jsPreloader" class="page-preloader">
