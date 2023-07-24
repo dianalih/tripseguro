@@ -7698,6 +7698,8 @@ input[type="button"].btn-block {
   border-color: #e7eaf3 #e7eaf3 #fff;
 }
 
+
+
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -8204,6 +8206,10 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid #e7eaf3;
   border-radius: 15px 15px 10px 10px;
+}
+
+.card-tabs {
+  border-radius: 0px 10px 10px 10px;
 }
 
 .card > hr {
@@ -43684,4 +43690,13 @@ input[type=number] {
 .tour-cta {
   bottom: 16px;
   position: absolute;
+}
+.blog-card {
+  position: relative;
+  padding-bottom: 70px;
+}
+.blog-card .btn-primary {
+position: absolute;
+bottom: 15px;
+width: calc(100% - 2rem);
 }

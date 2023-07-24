@@ -412,128 +412,136 @@
             </div>
             <div class="row">
                 <div class="col-12" id="info-pasajeros">
-
-                    <div class="card border-color-7 mb-5 overflow-hidden">
-                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
-                            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
-                                Información del pasajero principal
-                            </h5>
-                            <!-- Contacts Form -->
-                            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
-                                <div class="row">
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Primer Nombre</label>
-                                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                    <h2 class="font-size-27 font-size-xs-20 font-weight-bold mb-3 pl-3 text-blue-dark-1">Información de los pasajeros</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="active font-weight-medium nav-link" id="pills-pasajero1-tab" data-toggle="pill" href="#pills-pasajero1" role="tab" aria-controls="pills-pasajero1" aria-selected="true">Pasajero 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="font-weight-medium nav-link" id="pills-pasajero2-tab" data-toggle="pill" href="#pills-pasajero2" role="tab" aria-controls="pills-pasajero2" aria-selected="false">Pasajero 2</a>
+                        </li>
+                      </ul>
+                    <div class="card border-top-0 card-tabs">                        
+                         <div class="tab-content">
+                            <div class="tab-pane fade pt-md-4 show active" id="pills-pasajero1" role="tabpanel" aria-labelledby="pills-pasajero1">
+                                <div class="pb-2 pb-md-4 position-relative pt-0 pt-1 px-2 px-md-4 w-100">                                    
+                                    <!-- Contacts Form -->
+                                    <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
+                                        <div class="row">
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Primer Nombre</label>
+                                                    <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+        
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Apellido</label>
+                                                    <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">ID o Pasaporte</label>
+                                                    <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control" name="email" placeholder="tuemail@email.com" aria-label="" required="" data-msg="Ingrese un email valido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Teléfono</label>
+                                                    <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Fecha de Nacimiento</label>
+                                                    <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <div class="w-100"></div>
                                         </div>
-                                    </div>
-                                    <!-- End Input -->
-
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">ID o Pasaporte</label>
-                                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" name="email" placeholder="tuemail@email.com" aria-label="" required="" data-msg="Ingrese un email valido" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Teléfono</label>
-                                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Fecha de Nacimiento</label>
-                                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <div class="w-100"></div>
+                                    </form>
+                                    <!-- End Contacts Form -->
                                 </div>
-                            </form>
-                            <!-- End Contacts Form -->
-                        </div>
-                    </div>
-                    <div class="card border-color-7 mb-5 overflow-hidden">
-                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
-                            <h5 id="scroll-description" class="font-size-21 font-weight-bold text-dark mb-4">
-                                Información del pasajero 2
-                            </h5>
-                            <!-- Contacts Form -->
-                            <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
-                                <div class="row">
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Primer Nombre</label>
-                                            <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
+                            </div>
 
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                            <div class="tab-pane fade pt-md-4" id="pills-pasajero2" role="tabpanel" aria-labelledby="pills-pasajero2">
+                                <div class="pb-2 pb-md-4 position-relative pt-0 pt-1 px-2 px-md-4 w-100">                                    
+                                    <!-- Contacts Form -->
+                                    <form class="js-validate" novalidate="novalidate" data-ol-has-click-handler="">
+                                        <div class="row">
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Primer Nombre</label>
+                                                    <input type="text" class="form-control" name="firstName" placeholder="Ali" aria-label="Ali" required="" data-msg="Primer nombre es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+        
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Apellido</label>
+                                                    <input type="text" class="form-control" name="lasstName" placeholder="Lopez" aria-label="Lopez" required="" data-msg="Apellido es requerido" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">ID o Pasaporte</label>
+                                                    <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Teléfono</label>
+                                                    <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <!-- Input -->
+                                            <div class="col-sm-6 col-md-4 mb-4">
+                                                <div class="js-form-message">
+                                                    <label class="form-label">Fecha de Nacimiento</label>
+                                                    <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
+                                                </div>
+                                            </div>
+                                            <!-- End Input -->
+                                            <div class="w-100"></div>
                                         </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">ID o Pasaporte</label>
-                                            <input type="text" class="form-control" name="passport" placeholder="Pasaporte" required="" data-msg="Una identificación es requerida" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Teléfono</label>
-                                            <input type="number" class="form-control" name="phone" placeholder="+90 (254) 458 96 32" aria-label="+90 (254) 458 96 32" required="" data-msg="Please enter a valid phone number." data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <!-- Input -->
-                                    <div class="col-sm-6 col-md-4 mb-4">
-                                        <div class="js-form-message">
-                                            <label class="form-label">Fecha de Nacimiento</label>
-                                            <input type="birthday" class="form-control" name="birthday" placeholder="dd/mm/aaaa" aria-label="" required="" data-msg="Ingrese una fecha valida" data-error-class="u-has-error" data-success-class="u-has-success">
-                                        </div>
-                                    </div>
-                                    <!-- End Input -->
-                                    <div class="w-100"></div>
+                                    </form>
+                                    <!-- End Contacts Form -->
                                 </div>
-                            </form>
-                            <!-- End Contacts Form -->
-                        </div>
+                            </div>
+                         </div>                        
                     </div>
+
                     <div class="">
                         <!-- Checkbox -->
-                        <div class="border border-radius-5 js-form-message mb-5 px-2 py-3">
+                        <div class="js-form-message mb-5 px-2 pt-5 pb-3">
                             <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
                                 <input type="checkbox" class="custom-control-input" id="addHotel" name="addHotel" required data-msg="Please accept our Terms and Conditions." data-error-class="u-has-error" data-success-class="u-has-success">
                                 <label class="custom-control-label text-blue-dark-1 font-size-17" for="addHotel">
@@ -543,9 +551,9 @@
                         </div>
                         <!-- End Checkbox -->
                     </div>
+                    <h2 class="font-size-27 font-size-xs-20 font-weight-bold mb-3 pl-3 text-blue-dark-1">Información de pago</h2>
                     <div id="pago" class="card border-color-7 mb-5 overflow-hidden">
-                        <div class="position-relative py-2 px-2 px-md-4 py-md-4 w-100">
-                            <h5 class="font-size-21 font-weight-bold text-dark mb-4">Información de pago</h5>
+                        <div class="position-relative py-3 px-2 px-md-4 pt-md-6 pb-md-4 w-100">
                             <!-- Tab Content -->
                             <!-- Payment Form -->
                             <form class="js-validate">
