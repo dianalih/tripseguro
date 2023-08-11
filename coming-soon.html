@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Title -->
+    <title>Tripseguro - Coming soon</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Rubik:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+    <!-- CSS  Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/87cd9ac244.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="content">
+        <div class="height-100vh overflow-hidden pb-10 position-relative">
+            <video id="background-video" class="background-video" autoplay loop muted poster="assets/img/video-hero.mp4">
+                <source src="assets/img/tripseguro-hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="color1">
+            </div>
+            <div class="color2">
+            </div>
+            <div class="color3">
+            </div>
+            <div class="color1 c1-2">
+            </div>
+            <div class="color2 c2-2">
+            </div>
+            <div class="color3 c3-2">
+            </div>
+            <div class="mt-10 text-center">
+                <img src="assets/img/logo_color.png" alt="" class="mb-4 mt-10 mx-auto" width="200">
+                <div class="px-3 pb-4">
+                    <h1 class="font-size-50 font-size-xs-30 text-blue-dark-1 font-weight-bold">Prepara tu equipaje</h1>
+                    <p class="font-size-1 font-size-20 font-weight-bold text-blue-dark-1">Estamos preparando todo para tu proximo viaje</p>
+                </div>
+                <div id="countdown">
+                    <ul class="p-0">
+                        <li><span id="days"></span>Días</li>
+                        <li><span id="hours"></span>Horas</li>
+                        <li><span id="minutes"></span>Min</li>
+                        <li><span id="seconds"></span>Seg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <style>
+        * {
+            font-family: "Rubik", Helvetica, Arial, sans-serif;
+        }
+        #countdown li {
+            display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0 1em;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 5px solid #7f1ae2;
+    color: #000042;
+    font-weight: 600;
+    background: rgba(255,255,255,0.5);
+        }
+
+        #countdown li span {
+            display: block;
+    font-size: 2em;
+    font-weight: 500;
+    color: #43c5db;
+        }
+
+        .color1 {
+            width: 50%;
+            height: 50%;
+            aspect-ratio: 1;
+            border-radius: 100%;
+            background-color: rgba(131, 230, 255, 0.3);
+            left: -25%;
+            top: 50%;
+            position: absolute;
+            display: block;
+            filter: blur(50px);
+            z-index: -1;
+            transition: all ease;
+            animation-name: color1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .color2 {
+            width: 50%;
+            height: 50%;
+            border-radius: 100%;
+            background-color: rgba(109, 30, 221, 0.1);
+            position: absolute;
+            display: block;
+            right: -25%;
+            top: 0;
+            filter: blur(50px);
+            z-index: -1;
+            transition: all ease;
+            animation-name: color2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .color3 {
+            width: 50%;
+            height: 50%;
+            aspect-ratio: 1;
+            border-radius: 100%;
+            background-color: rgba(243, 74, 171, 0.1);
+            position: absolute;
+            display: block;
+            left: 35%;
+            bottom: -25%;
+            filter: blur(50px);
+            z-index: -1;
+            transition: all ease;
+            animation-name: color3;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .c1-2 {
+            animation-name: color2;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .c2-2 {
+            animation-name: color3;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .c3-2 {
+            animation-name: color1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes color1 {
+            0% {
+                left: -25%;
+                top: 50%;
+            }
+
+            50% {
+                left: 0%;
+                top: 30%;
+            }
+
+            100% {
+                left: 25%;
+                top: 0%;
+            }
+
+        }
+
+        @keyframes color2 {
+            0% {
+                left: -25%;
+                top: 0;
+            }
+
+            50% {
+                left: -5%;
+                top: 15%;
+            }
+
+            100% {
+                left: 25%;
+                top: 50%;
+            }
+        }
+
+        @keyframes color3 {
+            0% {
+                left: 35%;
+                bottom: -25%;
+            }
+
+            50% {
+                left: 50%;
+                bottom: 0%;
+            }
+
+            100% {
+                left: 50%;
+                bottom: 25%;
+            }
+        }
+        video {
+            z-index: -1 !important;
+    opacity: 15%;
+    filter: blur(4px);
+        }
+        @media (max-width: 565px){
+            #countdown li {
+    font-size: 12px;
+    padding: 0.5em;
+    margin: 0 0.2em;
+    width: 60px;
+    
+    border: 3px solid #7f1ae2;
+    background: rgba(255,255,255,0.5);
+}
+#countdown li span {
+    font-size: 18px;
+    font-weight: 500;
+}
+        }
+    </style>
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "09/30/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+
+                    //seconds
+                }, 0)
+        }());
+    </script>
+</body>
+
+</html>
