@@ -38603,6 +38603,9 @@ z-index: -1;
     opacity: 0.3;
   background-image: url(../img/maleta.svg);
 }
+.bg-white.after-before-maleta::after{
+  z-index: 1;
+}
 .after-before-maleta2 {
   position: relative;
   overflow: hidden;
@@ -43687,6 +43690,7 @@ input[type=number] {
   color: #fff;
   
 }
+
 .tour-cta {
   bottom: 16px;
   position: absolute;
@@ -43699,4 +43703,7 @@ input[type=number] {
 position: absolute;
 bottom: 15px;
 width: calc(100% - 2rem);
+}
+.tours-list .col-md-4 .card {
+  padding-bottom: 90px !important;
 }
