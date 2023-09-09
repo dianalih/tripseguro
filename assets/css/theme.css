@@ -43707,3 +43707,17 @@ width: calc(100% - 2rem);
 .tours-list .col-md-4 .card {
   padding-bottom: 90px !important;
 }
+
+.ty-page-div {
+  width: fit-content;
+  padding: 30px 50px 40px;
+}
+
+.bg-btn {
+  background: hsla(291, 99%, 59%, 1);
+
+background: -moz-linear-gradient(90deg, hsla(291, 99%, 59%, 1) 0%, hsla(270, 81%, 49%, 1) 54%, hsla(230, 98%, 77%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(291, 99%, 59%, 1) 0%, hsla(270, 81%, 49%, 1) 54%, hsla(230, 98%, 77%, 1) 100%);
+background: linear-gradient(90deg, hsla(291, 99%, 59%, 1) 0%, hsla(270, 81%, 49%, 1) 54%, hsla(230, 98%, 77%, 1) 100%);
+}
