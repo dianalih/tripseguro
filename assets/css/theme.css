@@ -44129,6 +44129,34 @@ screen and (-ms-high-contrast: none) {
   z-index: -1;
 }
 
+.after-before-gradient3::before {
+  content: "";
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: rgba(131, 230, 255, 0.4);
+  left: -10%;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.after-before-gradient3::after {
+  content: "";
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: rgba(109, 30, 221, 0.4);
+  position: absolute;
+  display: block;
+  right: -10%;
+  top: 0;
+  filter: blur(50px);
+  z-index: -1;
+}
+
 .after-before-maleta {
   position: relative;
   overflow: hidden;
@@ -49164,7 +49192,7 @@ li.select2-results__option span i {
 
 @media (min-width: 1200px) {
   .body-login .form-container {
-    margin-top: 180px;
+    margin-top: 80px;
     margin-bottom: 120px;
   }
 }
@@ -49424,4 +49452,9 @@ input[type=number] {
 .bg-btn:hover {
   background: linear-gradient(19deg, #6d1edd 100%, #6d1edd 100%);
   color: #fff;
+}
+
+.img-404 img {
+  width: 300px;
+  max-width: 60%;
 }

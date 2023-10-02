@@ -35,130 +35,149 @@
 
 <body>
      <!-- ========== HEADER ========== -->
-     <header id="header" class="u-header u-header--abs-top-xl u-header--white-nav-links-xl u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="300" data-header-fix-effect="slide">
-        <div class="u-header_section u-header_shadow-on-show-hide py-4 py-xl-0">
-            <!-- Topbar -->
-            <div class="bg-violet u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
-                <div class="container">
-                    <div class="d-flex align-items-center">
-                        <div class="position-relative u-header_hide-content">
-                            <ul class="list-inline u-header_topbar-nav-divider mb-0">
-                                <li class="list-inline-item mr-0"><a href="tel:(000)000000000" class="u-header_navbar-link">(000) 000 - 000 - 000</a></li>
-                                <li class="list-inline-item mr-0"><a href="mailto:info@tripseguro.com" class="u-header_navbar-link">info@tripseguro.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="ml-auto d-flex align-items-center">
-                            <ul class="list-inline mb-0 mr-2 pr-1">
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
-                                        <span class="fab fa-facebook-f btn-icon_inner"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://twitter.com/" target="_blank">
-                                        <span class="fab fa-twitter btn-icon_inner"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.instagram.com/" target="_blank">
-                                        <span class="fab fa-instagram btn-icon_inner"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.linkedin.com/" target="_blank">
-                                        <span class="fab fa-linkedin-in btn-icon_inner"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Topbar -->
-            <div id="logoAndNav" class="container">
-                <!-- Nav -->
-                <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
-                    <!-- Logo -->
-                    <a class="navbar-brand u-header_navbar-brand-default u-header_navbar-brand-center u-header_navbar-brand-text-white" href="index.html" aria-label="TripSeguro">
-                        <img src="assets/img/logo-white.png" alt="">
+     <header id="header" class="menu-no-home u-header--abs-top-xl u-header u-header--white-nav-links-xl bg-blue-dark u-header--bg-transparent-xl u-header--show-hide-xl" data-header-fix-moment="300" data-header-fix-effect="slide">
+        <div class="u-header_section u-header_shadow-on-show-hide py-0 ">
+           <!-- Topbar -->
+           <div class="border-bottom-1 u-header_hide-content u-header_topbar u-header_topbar-lg py-1">
+              <div class="container">
+                  <div class="d-flex align-items-center">
+                      <div class="position-relative u-header_hide-content">
+                          <ul class="list-inline u-header_topbar-nav-divider mb-0">
+                              <li class="list-inline-item mr-0"><a href="tel:(000)000000000" class="u-header_navbar-link">(000) 000 - 000 - 000</a></li>
+                              <li class="list-inline-item mr-0"><a href="mailto:info@tripseguro.com" class="u-header_navbar-link">info@tripseguro.com</a></li>
+                          </ul>
+                      </div>
+                      <div class="ml-auto d-flex align-items-center">
+                          <ul class="list-inline mb-0 mr-2 pr-1">
+                              <li class="list-inline-item">
+                                  <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.facebook.com/" target="_blank">
+                                      <span class="fab fa-facebook-f btn-icon_inner"></span>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://twitter.com/" target="_blank">
+                                      <span class="fab fa-twitter btn-icon_inner"></span>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.instagram.com/" target="_blank">
+                                      <span class="fab fa-instagram btn-icon_inner"></span>
+                                  </a>
+                              </li>
+                              <li class="list-inline-item">
+                                  <a class="btn btn-sm btn-icon btn-pill btn-soft-white btn-bg-transparent transition-3d-hover" href="https://www.linkedin.com/" target="_blank">
+                                      <span class="fab fa-linkedin-in btn-icon_inner"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <div class="d-sm-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                              <a class="d-flex align-items-center text-white py-3" href=""><i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
+                                  <span class="d-inline-block font-size-14 mr-1">Login</span>
+                              </a>
+                          </div>
+  
+                          <div class="d-sm-block d-none position-relative px-3 u-header_login-form dropdown-connector-xl u-header_topbar-divider">
+                              <a id="signUpDropdownInvoker"  href="javascript:;" class="d-flex align-items-center text-white py-3" aria-controls="signUpDropdown" aria-haspopup="true" aria-expanded="true" data-unfold-event="click" data-unfold-target="#signUpDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                                  <i class="fa fa-user mr-2 ml-1" aria-hidden="true"></i>
+                                  <span class="d-inline-block font-size-14 mr-1">Login</span>
+                              </a>
+                              <div id="signUpDropdown" class="dropdown-menu dropdown-unfold dropdown-menu-right py-0 mt-0" aria-labelledby="signUpDropdownInvoker" style="min-width: 500px;">
+                                 <!-- PONE AQUI TODO LOS FORMS DEL DROPDOWN DE LOGIN-->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+           <!-- End Topbar -->
+           <div id="logoAndNav" class="container">
+              <!-- Nav -->
+              <nav class="navbar navbar-expand-xl u-header_navbar u-header_navbar--no-space">
+                 <!-- Logo -->
+                 <a class="navbar-brand u-header_navbar-brand-default u-header_navbar-brand-center u-header_navbar-brand-text-white" href="index.html" aria-label="TripSeguro">
+                    <img src="assets/img/logo_footer.png" alt="">
+                 </a>
+                 <!-- End Logo -->
+                 <!-- Handheld Logo -->
+                 <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-collapsed" href="index.html" aria-label="TripSeguro">
+                    <img src="assets/img/logo_color.png" alt="">
+                 </a>
+                 <!-- End Handheld Logo -->
+                 <!-- Scroll Logo -->
+                 <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-on-scroll" href="index.html" aria-label="TripSeguro">
+                    <img src="assets/img/logo_color.png" alt="">
+                 </a>
+                 <!-- End Scroll Logo -->
+                 <!-- Responsive Toggle Button -->
+                 <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                    <span id="hamburgerTrigger" class="u-hamburger_box">
+                       <span class="u-hamburger_inner"></span>
+                    </span>
+                 </button>
+                 <!-- End Responsive Toggle Button -->
+                 <!-- Navigation -->
+                 <div id="navBar" class="navbar-collapse u-header_navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
+                    <ul class="navbar-nav u-header_navbar-nav">
+                       <!-- Home -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="homeMenu" class="nav-link u-header_nav-link  u-header_nav-link-border" href="#">Home</a>
+                       </li>
+                       <!-- End Home -->
+                       <!-- Hoteles -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Hoteles</a>
+                       </li>
+                       <!-- End Hoteles -->
+                       <!-- Autos -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Autos</a>
+                       </li>
+                       <!-- End Autos  -->
+                       <!-- Autos -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Seguros</a>
+                       </li>
+                       <!-- End Autos  -->
+                       <!-- Autos -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Tours</a>
+                       </li>
+                       <!-- End Autos  -->
+                       <!-- Autos -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre
+                             Nosotros</a>
+                       </li>
+                       <!-- End Autos  -->
+                       <!-- Autos -->
+                       <li class="nav-item u-header_nav-item">
+                          <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Contáctanos</a>
+                       </li>
+                       <!-- End Autos  -->
+                    </ul>
+                 </div>
+                 <!-- End Navigation -->
+                 <!-- Shopping Cart -->
+                 <div class="pl-2 pl-md-4 ml-auto shopping-cart">
+                    <a id="shoppingCartDropdownInvoker" class="btn-text-secondary py-4 position-relative" href="javascript:;" role="button" aria-controls="shoppingCartDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#shoppingCartDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                       <span class="font-size-25 text-primary-max-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                       <span class="cart-products">3</span>
                     </a>
-                    <!-- End Logo -->
-
-                    <!-- Handheld Logo -->
-                    <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-collapsed" href="index.html" aria-label="TripSeguro">
-                        <img src="assets/img/logo_color.png" alt="">
-                    </a>
-                    <!-- End Handheld Logo -->
-
-                    <!-- Scroll Logo -->
-                    <a class="navbar-brand u-header_navbar-brand u-header_navbar-brand-center u-header_navbar-brand-on-scroll" href="index.html" aria-label="TripSeguro">
-                        <img src="assets/img/logo_color.png" alt="">
-                    </a>
-                    <!-- End Scroll Logo -->
-
-                    <!-- Responsive Toggle Button -->
-                    <button type="button" class="navbar-toggler btn u-hamburger u-hamburger--primary order-2 ml-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-                        <span id="hamburgerTrigger" class="u-hamburger_box">
-                            <span class="u-hamburger_inner"></span>
-                        </span>
-                    </button>
-                    <!-- End Responsive Toggle Button -->
-
-                    <!-- Navigation -->
-                    <div id="navBar" class="navbar-collapse u-header_navbar-collapse collapse order-2 order-xl-0 pt-4 p-xl-0 position-relative">
-                        <ul class="navbar-nav u-header_navbar-nav">
-                            <!-- Home -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="homeMenu" class="nav-link u-header_nav-link  u-header_nav-link-border" href="#">Home</a>
-                            </li>
-                            <!-- End Home -->
-
-                            <!-- Hoteles -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Hoteles</a>
-                            </li>
-                            <!-- End Hoteles -->
-                            <!-- Autos -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Autos</a>
-                            </li>
-                            <!-- End Autos  -->
-                            <!-- Autos -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Seguros</a>
-                            </li>
-                            <!-- End Autos  -->
-                            <!-- Autos -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Tours</a>
-                            </li>
-                            <!-- End Autos  -->
-                            <!-- Autos -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Sobre Nosotros</a>
-                            </li>
-                            <!-- End Autos  -->
-                            <!-- Autos -->
-                            <li class="nav-item u-header_nav-item">
-                                <a id="hotelMenu" class="nav-link u-header_nav-link u-header_nav-link-border" href="#">Contáctanos</a>
-                            </li>
-                            <!-- End Autos  -->
-                        </ul>
-                    </div>
-                    <!-- End Navigation -->
-                </nav>
-                <!-- End Nav -->
-            </div>
+                 </div>
+                 <!-- End Shopping Cart -->
+              </nav>
+              <!-- End Nav -->
+           </div>
         </div>
-    </header>
+     </header>
     <!-- ========== End HEADER ========== -->
 
     <!-- ========== MAIN CONTENT ========== -->
-    <main id="content">
-        <div class="bg-blue-1 body-login">
+    <main id="content bg-tripseguro-op">
+        <div class="after-before-maleta bg-tripseguro-op body-login">
             <div class="form-container p-4">
-                <div class="card rounded-xs">
-                    <form class="js-validate" novalidate="novalidate" method="post">                       
+                <div class="card rounded-xs after-before-gradient2">
+                    <form class="js-validate after-before-gradient3" novalidate="novalidate" method="post">                       
                         <!-- Signup -->
                         <div id="signup">
                             <!-- Header -->
@@ -278,7 +297,7 @@
         </div>
     </main>
     <!-- ========== FOOTER ========== -->
-    <footer class="footer mt-4">
+    <footer class="footer">
         <div class="space-bottom-2 space-top-1">
             <div class="container">
                 <div class="row justify-content-xl-between">
